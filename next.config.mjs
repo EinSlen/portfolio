@@ -1,4 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import withBundleAnalyzer from '@next/bundle-analyzer';
 
-export default nextConfig;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    experimental: {
+        optimizePackageImports: ['icon-library'],
+    },
+};
+
+const bundleAnalyzer = withBundleAnalyzer({
+    enabled: process.env.ANALYZE === 'true',
+});
+
+export default bundleAnalyzer(nextConfig);
