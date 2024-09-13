@@ -4,6 +4,9 @@ import withBundleAnalyzer from '@next/bundle-analyzer';
 const nextConfig = {
     experimental: {
         optimizePackageImports: ['icon-library'],
+        optimizeCss: true,
+        optimisticClientCache: true,
+        optimizeServerReact: true
     },
 };
 
