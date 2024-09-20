@@ -1,6 +1,6 @@
 "use client";
 
-import { Socials } from "@/constants";
+import { Socials } from "../../constants";
 import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
 import React, { useState } from "react";
