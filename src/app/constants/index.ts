@@ -1,13 +1,13 @@
 export const Skill_data = [
     {
         skill_name: "Visual studio code",
-        Image: "/svg/visual.png",
+        Image: "svg/visual.png",
         width: 80,
         height: 80,
     },
     {
         skill_name: "Eclipse",
-        Image: "/svg/eclipse.png",
+        Image: "svg/eclipse.png",
         width: 80,
         height: 80,
     },
