@@ -51,7 +51,7 @@ const Footer = () => {
                 </div>
 
                 <div className="mb-[20px] text-[15px] text-center">
-                    &copy; Valentin Damlencourt 2024 Inc. All rights reserved
+                    &copy; Valentin Damlencourt 2023 Inc. All rights reserved
                 </div>
             </div>
         </div>

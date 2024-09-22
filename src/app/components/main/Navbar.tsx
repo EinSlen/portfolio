@@ -21,6 +21,13 @@ const Navbar = () => {
             <div className="w-full h-full flex flex-row items-center justify-between">
                 <a href="/" className="flex flex-row items-center sm:pr-2">
                     <div className="relative w-12 h-12 md:w-15 md:h-15">
+                        <Image
+                            src="https://avatars.githubusercontent.com/u/62669119?v=4"
+                            alt="logo"
+                            layout="fill"
+                            objectFit="cover"
+                            className="cursor-pointer hover:animate-slowspin border border-solid border-gray-500 rounded-full w-full min-w-full"
+                        />
                     </div>
                     <span className="font-bold ml-2 md:ml-4 hidden md:block text-gray-300">
             EinSlen (Valentin Damlencourt)
