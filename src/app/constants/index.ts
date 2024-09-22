@@ -297,7 +297,7 @@ export const Projets_fill_en = [
     },
     {
         project_name: "FlatCraft",
-        src: "/projets/flatcraft.png",
+        src: "public/projets/flatcraft.png",
         description: "Participation in the Flatcraft project at the IUT of Lens: team design, creation and implementation of an existing three-dimensional video game, in Java and with the JavaFX graphics library.",
         images: ["/svg/java.svg"]
     },
@@ -360,7 +360,7 @@ export const Projets_fill_en = [
     },
     {
         project_name: "Pokedex",
-        src: "/projets/ajout.png",
+        src: "public/projets/ajout.png",
         description: "Pokedex to retrieve the information of the requested pokemon with Flask python from the api (api-pokemon.fr)",
         images: ["/svg/python.png", "/svg/flask.webp"]
     },
