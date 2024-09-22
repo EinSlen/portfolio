@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'out',
-    basePath: '/portfolio',
-    assetPrefix: '/portfolio',
+    //assetPrefix: '/portfolio',
     experimental: {
         optimizePackageImports: ['icon-library'],
         optimizeCss: true,
