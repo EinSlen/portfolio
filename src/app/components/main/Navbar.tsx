@@ -22,7 +22,7 @@ const Navbar = () => {
                 <a href="/" className="flex flex-row items-center sm:pr-2">
                     <div className="relative w-12 h-12 md:w-15 md:h-15">
                         <Image
-                            src="./"
+                            src="/svg/css.png"
                             alt="logo"
                             layout="fill"
                             objectFit="cover"
