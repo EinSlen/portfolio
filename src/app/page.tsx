@@ -1,22 +1,44 @@
-import Image from "next/image";
-'use client';
+import Link from "next/link"
+import { AnimatedGradient } from "@/components"
+import {
+    About,
+    Education,
+    GetInTouch,
+    HeroBanner,
+    Projects,
+    WorkExperience,
+} from "@/app/features/portfolio"
+export default async function Home() {
 
-import Hero from "./components/main/Hero";
-import Projects from "./components/main/Projects";
-import Skills from "@/app/components/main/Skills";
-import Career from "./components/main/Career";
+    return (
+        <main>
+            <AnimatedGradient />
+            <HeroBanner />
+            <div className="container flex flex-col space-y-24">
 
-import './utils/i18n';
+            </div>
+            <div
+                id="contact"
+                className="flex min-h-[calc(100vh-160px)] items-center justify-center py-20"
+            >
+                <GetInTouch />
+            </div>
+        </main>
+    )
+}
 
-export default function Home() {
-  return (
-      <main className="h-full w-full">
-        <div className="flex flex-col gap-20 bg-black">
-          <Hero />
-          <Career />
-          <Skills />
-          <Projects />
+interface SectionProps {
+    title: string
+    children: React.ReactNode
+    id: string
+}
+
+const Section = (props: SectionProps) => {
+    const { title, id, children } = props
+    return (
+        <div id={id} className="mx-auto w-full max-w-4xl">
+            <h2 className="font-display mb-4 text-4xl font-bold">{title}</h2>
+            {children}
         </div>
-      </main>
-  );
+    )
 }
