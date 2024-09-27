@@ -6,7 +6,7 @@ import { useScroll } from "@/app/hooks"
 import { cn } from "@/app/utils"
 
 export const Background = () => {
-  useSearchParams()
+  //useSearchParams()
   const { scrolled } = useScroll(0)
 
   return (

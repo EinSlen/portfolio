@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import dynamic from "next/dynamic";
-import Navbar from "@/../src/components/Navbar";
+import Navbar from "@/../src/components/header/header";
 import React from "react";
 import Button from "@/components/Button";
 const geistSans = localFont({
@@ -58,7 +58,7 @@ export default function RootLayout({
                             title="onam"
                             className={`!text-4xl dark:text-white !p-0 !font-bold ${geistMono.variable}`}
                         >
-                            {"<Onam/>"}
+                            {"<DVLaD/>"}
                         </Button>
                     </div>
                     <Navbar />
