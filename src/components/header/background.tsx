@@ -2,11 +2,11 @@
 
 import React from "react"
 import { useSearchParams } from "next/navigation"
-import { useScroll } from "@/app/hooks"
-import { cn } from "@/app/utils"
+import { useScroll } from "@/hooks"
+import { cn } from "@/utils"
 
 export const Background = () => {
-  //useSearchParams()
+  useSearchParams()
   const { scrolled } = useScroll(0)
 
   return (

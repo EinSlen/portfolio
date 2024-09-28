@@ -4,7 +4,7 @@ import React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { INavItem } from "@/types"
-import { cn } from "@/app/utils"
+import { cn } from "@/utils"
 
 interface NavProps {
   items: INavItem[]

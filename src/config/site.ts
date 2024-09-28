@@ -1,9 +1,9 @@
-import { ISiteConfig } from "../../../../Téléchargements/folio-main/src/types"
+import { ISiteConfig } from "@/types"
 
 export const siteConfig: ISiteConfig = {
-  name: "einslen", // shown in the header
+  name: "Notionfol.io", // shown in the header
   description:
-    "Portfolio de damlencourt Valentin",
+    "Make your own personal website with portfolio , blog, courses and more using notion as a CMS, in minutes with Next.js and Vercel.",
   image: "/images/screenshots/screenshot01.png",
   links: {
     // order is same order in the footer (when link added it's shown in the footer)
@@ -38,14 +38,14 @@ export const siteConfig: ISiteConfig = {
   heroBanner: {
     title: {
       1: [
-        { text: "Salut. Je suis " },
-        { text: "Valentin damlencourt", highlighted: true },
+        { text: "Hey there. I'm " },
+        { text: "Notionfol.io", highlighted: true },
         { text: "." },
       ],
-      2: [{ text: "Voici mon portfolio." }],
+      2: [{ text: "An awesome open-source project." }],
     },
     subtitle:
-      "Retrouvez mes projets et mes compétences à travers ce portfolio.",
+      "Make your own portfolio + Notion-powered blog in minutes with Next.js and Vercel.",
     callToActions: [
       {
         label: "Read the blog",

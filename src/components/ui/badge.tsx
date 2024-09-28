@@ -1,5 +1,5 @@
 import * as React from "react"
-import { VariantProps, cn, cva } from "@/app/utils"
+import { VariantProps, cn, cva } from "@/utils"
 
 const badgeVariants = cva(
   "flex items-center rounded-full text-xs font-medium  border",

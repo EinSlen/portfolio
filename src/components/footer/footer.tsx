@@ -9,8 +9,8 @@ import {
   Twitter,
 } from "@/assets/icons"
 import { siteConfig } from "@/config"
-// import { ILinks } from "@/app/types"
-import { getRepoDetails } from "@/app/lib/github"
+import { ILinks } from "@/types"
+import { getRepoDetails } from "@/lib/github"
 import { Button, Separator } from "../ui"
 
 const getData = async () => {
@@ -78,10 +78,10 @@ export const Footer = async () => {
         <div className="flex space-x-1">
           {/* TODO: Repetition of ILinks */}
           {Object.keys(links).map((key) => {
-            if (links[key as keyof any]) {
-              const Icon = icons[key as keyof any]
+            if (links[key as keyof ILinks]) {
+              const Icon = icons[key as keyof ILinks]
               return (
-                <a key={key} href={links[key as keyof any]} target="_blank">
+                <a key={key} href={links[key as keyof ILinks]} target="_blank">
                   <Button size="icon" variant="ghost">
                     <Icon />
                   </Button>
