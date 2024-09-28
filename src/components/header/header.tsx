@@ -8,7 +8,6 @@ import { MobileNav } from "./mobile-nav"
 import { Nav } from "./nav"
 import { ThemeToggle } from "./theme-toggle"
 
-const logo = siteConfig.header.logo
 const name = siteConfig.name
 const nav = siteConfig.header.nav
 
@@ -21,17 +20,7 @@ export const Header = () => {
             href="/"
             className="mr-8 flex items-center space-x-2 transition-all hover:opacity-80"
           >
-            {logo && (
-              <Image
-                src={logo}
-                alt={name}
-                loading="lazy"
-                width={30}
-                height={30}
-                className="aspect-[auto 30 / 30] object-cover"
-              />
-            )}
-            <span className="inline-block font-bold">{name}</span>
+            <span className="inline-block font-bold">{"<"+name+"/>"}</span>
           </Link>
           <div className="hidden flex-1 sm:flex">
             <div className="flex-1">

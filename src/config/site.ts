@@ -1,10 +1,9 @@
 import { ISiteConfig } from "@/types"
 
 export const siteConfig: ISiteConfig = {
-  name: "Notionfol.io", // shown in the header
+  name: "einslen", // shown in the header
   description:
-    "Make your own personal website with portfolio , blog, courses and more using notion as a CMS, in minutes with Next.js and Vercel.",
-  image: "/images/screenshots/screenshot01.png",
+    "Portfolio de damlencourt Valentin",
   links: {
     // order is same order in the footer (when link added it's shown in the footer)
     mail: "hello@mehdibha.co",
@@ -15,7 +14,6 @@ export const siteConfig: ISiteConfig = {
     codepen: "https://codepen.io/mehdi-ben-hadj-ali",
   },
   header: {
-    logo: "/images/logo.png",
     nav: [
       {
         title: "Home",
@@ -37,15 +35,16 @@ export const siteConfig: ISiteConfig = {
   },
   heroBanner: {
     title: {
-      1: [
-        { text: "Hey there. I'm " },
-        { text: "Notionfol.io", highlighted: true },
+      1: [{ text: "Hey !" }],
+      2: [
+        { text: "Je suis " },
+        { text: "Valentin damlencourt", highlighted: true },
         { text: "." },
       ],
-      2: [{ text: "An awesome open-source project." }],
+      3: [{ text: "Voici mon portfolio." }],
     },
     subtitle:
-      "Make your own portfolio + Notion-powered blog in minutes with Next.js and Vercel.",
+        "Retrouvez mes projets et mes compétences à travers ce portfolio.",
     callToActions: [
       {
         label: "Read the blog",
