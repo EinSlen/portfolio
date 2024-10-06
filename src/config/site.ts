@@ -6,7 +6,7 @@ export const siteConfig: ISiteConfig = {
     "Portfolio de damlencourt Valentin",
   links: {
     // order is same order in the footer (when link added it's shown in the footer)
-    mail: "hello@mehdibha.co",
+    mail: "valentin.damlencourt@gmail.com",
     linkedin: "https://linkedin.com/mehdibha",
     github: "https://github.com/mehdibha",
     twitter: "https://twitter.com/mehdibha_",
