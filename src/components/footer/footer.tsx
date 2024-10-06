@@ -10,18 +10,8 @@ import {
 } from "@/assets/icons"
 import { siteConfig } from "@/config"
 import { ILinks } from "@/types"
-import { getRepoDetails } from "@/lib/github"
 import { Button, Separator } from "../ui"
 
-const getData = async () => {
-  try {
-    const repoDetails = await getRepoDetails()
-    const { stargazers_count, forks } = repoDetails
-    return { starsCount: stargazers_count, forksCount: forks }
-  } catch (error) {
-    return { starsCount: 116, forksCount: 40 }
-  }
-}
 
 const links = siteConfig.links
 const icons = {
@@ -34,7 +24,6 @@ const icons = {
 }
 
 export const Footer = async () => {
-  const { starsCount, forksCount } = await getData()
 
   return (
     <div className="container mt-12 pb-1">
@@ -52,28 +41,6 @@ export const Footer = async () => {
             </a>{" "}
             2023.
           </p>
-          <div className="text-foreground-secondary flex space-x-2 text-sm ">
-            <p>
-              Website powered by{" "}
-              <a
-                href="https://github.com/Mehdi-BHA/notionfolio"
-                target="_blank"
-                className="hover:underline"
-              >
-                notionfol.io.
-              </a>
-            </p>
-            <div className="text-foreground-secondary flex items-center space-x-2 text-sm">
-              <div className="flex items-center space-x-1">
-                <Star size={16} />
-                <span>{starsCount}</span>
-              </div>
-              <div className="flex items-center space-x-1">
-                <GitFork size={16} />
-                <span>{forksCount}</span>
-              </div>
-            </div>
-          </div>
         </div>
         <div className="flex space-x-1">
           {/* TODO: Repetition of ILinks */}
