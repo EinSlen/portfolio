@@ -33,13 +33,13 @@ export const Footer = async () => {
           <p>
             All rights reserved ©{" "}
             <a
-              href="https://github.com/Mehdi-BHA/notionfolio"
+              href="https://github.com/einslen/portfolio"
               target="_blank"
               className="hover:underline"
             >
               {siteConfig.name}
             </a>{" "}
-            2023.
+            2024.
           </p>
         </div>
         <div className="flex space-x-1">
