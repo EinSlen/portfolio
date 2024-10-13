@@ -3,6 +3,7 @@ import { AnimatedGradient } from "@/components"
 import {
   GetInTouch,
   HeroBanner,
+    Timeline
 } from "@/features/portfolio"
 
 
@@ -12,6 +13,7 @@ export default async function Home() {
     <main>
       <AnimatedGradient />
       <HeroBanner />
+        <Timeline />
       <div
         id="contact"
         className="flex min-h-[calc(100vh-160px)] items-center justify-center py-20"
