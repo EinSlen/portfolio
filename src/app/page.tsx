@@ -4,7 +4,8 @@ import {
   GetInTouch,
   HeroBanner,
     Timeline,
-    Projects
+    Projects,
+    Work
 } from "@/features/portfolio"
 
 
@@ -14,6 +15,7 @@ export default async function Home() {
     <main>
       <AnimatedGradient />
       <HeroBanner />
+        <Work />
         <Timeline />
         <Projects />
       <div
