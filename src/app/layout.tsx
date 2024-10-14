@@ -3,7 +3,7 @@ import localFont from "next/font/local"
 import { Footer, Header, ThemeProvider } from "@/components"
 import { REVALIDATE_TIME, siteConfig } from "@/config"
 import "@/styles/globals.css"
-import "@/styles/notion.css"
+// import "@/styles/notion.css"
 
 export const revalidate = REVALIDATE_TIME
 
