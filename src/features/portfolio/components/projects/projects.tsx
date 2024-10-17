@@ -1,4 +1,4 @@
-import React from 'react';
+import {basePath} from '@/utils';
 
 const projects = [
     {
@@ -8,7 +8,7 @@ const projects = [
         techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
         siteLink: '#',
         githubLink: '#',
-        image: '/images/projects/project01.webp', // Remplace par le bon chemin d'image
+        image: `${basePath}/images/projects/project01.webp`, // Remplace par le bon chemin d'image
     },
     // Ajoute d'autres projets ici si nécessaire
 ];
