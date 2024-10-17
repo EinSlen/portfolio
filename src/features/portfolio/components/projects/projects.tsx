@@ -8,7 +8,7 @@ export const Projects = async () => {
     const professionalProjectsData: any = siteConfig.projects;
 
     return (
-        <main className="container">
+        <main className="container pt-[calc(100vh-550px)]">
             <div className="flex flex-col gap-2  my-12">
                 <Typography size="h3/semi-bold" className="!text-3xl sm:text-4xl">
                     Projects
