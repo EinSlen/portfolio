@@ -1,6 +1,6 @@
 export const Timeline = () => {
     return (
-        <div className="relative flex flex-col min-h-[calc(100vh-350px)] md:pt-8 pt-8 items-center justify-center p-5 sm:p-0">
+        <div className="relative flex flex-col min-h-[calc(100vh-350px)] md:pt-8 pt-8 items-center justify-center pl-5 lg:pl-0">
             {/* Text Above the Timeline */}
             <div className="mb-10 mt-3 ml-20 sm:pe-8"> {/* Increased ml value */}
                 <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Version History</h1>
