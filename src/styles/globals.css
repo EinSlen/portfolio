@@ -107,4 +107,31 @@
   border: 1px solid rgb(100,100,100);
   background-color: rgb(120, 120, 120);
 }
+@keyframes scroll-mobile {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Animation active uniquement sur les écrans inférieurs à 768px */
+@media (max-width: 767px) {
+  .animate-scroll-mobile {
+    display: inline-block;
+    animation: scroll-mobile 10s linear infinite; /* Animation en boucle infinie */
+    animation-timing-function: linear; /* Assure un mouvement fluide sans à-coups */
+  }
+}
+
+/* Désactivation de l'animation à partir des écrans supérieurs à 768px */
+@media (min-width: 768px) {
+  .animate-scroll-mobile {
+    animation: none;
+  }
+}
+
+
+
 
