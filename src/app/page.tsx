@@ -18,7 +18,7 @@ export default async function Home() {
           <AnimatedGradient/>
           <HeroBanner/>
           <div
-              className="relative flex flex-col sm:flex-row gap-3 min-h-[calc(100vh-350px)] md:pt-8 pt-8 items-center justify-center">
+              className="relative flex flex-col sm:flex-row gap-3 min-h-[calc(100vh-550px)] md:pt-8 pt-8 items-center justify-center">
               <Work/>
               <BeyondTheCode/>
           </div>
