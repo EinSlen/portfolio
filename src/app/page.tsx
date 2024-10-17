@@ -4,7 +4,6 @@ import {
     GetInTouch,
     HeroBanner,
     Timeline,
-    Projects,
     Work,
     Competence,
     BeyondTheCode, SelectedWork

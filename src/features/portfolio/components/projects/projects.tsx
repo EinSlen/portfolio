@@ -1,6 +1,16 @@
 import {basePath} from '@/utils';
+import {Button} from "@/components/ui";
 
 const projects = [
+    {
+        name: 'Okv photogram',
+        description:
+            "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets users share their photos, comment and like others' posts. Users can also browse and follow other users' profiles.",
+        techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
+        siteLink: '#',
+        githubLink: '#',
+        image: `${basePath}/images/projects/project01.webp`, // Remplace par le bon chemin d'image
+    },
     {
         name: 'Okv photogram',
         description:
@@ -33,9 +43,9 @@ const projects = [
 // @ts-ignore
 const ProjectCard = ({ project }) => {
     return (
-        <div className="bg-gray-100 rounded-lg p-6 flex flex-col md:flex-row items-center justify-between shadow-lg mb-8 relative">
+        <div className="dark:bg-gray-800 dark:border-gray-700 bg-white rounded-lg p-6 flex flex-col md:flex-row items-center justify-between shadow-lg mb-8 relative">
             {/* Section texte */}
-            <div className="md:w-1/2 w-full mb-6 md:mb-0 z-10">
+            <div className="w-full mb-6 md:mb-0 z-10">
                 <div className="flex items-center mb-4">
                     <span className="text-3xl mr-2">📸</span>
                     <h3 className="text-3xl font-bold">{project.name}</h3>
@@ -86,11 +96,15 @@ const ProjectCard = ({ project }) => {
 
 export const SelectedWork = () => {
     return (
-        <section className="container mx-auto px-4 py-8">
+        <section className="container mx-auto px-4 py-8 pt-32">
             <h2 className="text-4xl font-bold mb-6">Selected Work</h2>
             {projects.map((project) => (
                 <ProjectCard key={project.name} project={project} />
             ))}
+            <div className="text-center">
+            <Button size="lg" variant={"outline"}>
+                <a href={""}>Show more...</a>
+            </Button></div>
         </section>
     );
 };
