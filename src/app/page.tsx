@@ -20,7 +20,7 @@ export default async function Home() {
           <Timeline/>
           <div
               id="competence"
-              className="pt-16 pb-16">
+              className="pb-16 pt-32">
           <Competence />
           </div>
           <Projects/>
