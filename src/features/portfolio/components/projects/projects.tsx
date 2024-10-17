@@ -3,7 +3,7 @@ import {Button} from "@/components/ui";
 
 const projects = [
     {
-        name: 'Okv photogram',
+        name: 'TEST',
         description:
             "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets users share their photos, comment and like others' posts. Users can also browse and follow other users' profiles.",
         techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
@@ -12,7 +12,7 @@ const projects = [
         image: `${basePath}/images/projects/project01.webp`, // Remplace par le bon chemin d'image
     },
     {
-        name: 'Okv photogram',
+        name: 'TEST',
         description:
             "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets users share their photos, comment and like others' posts. Users can also browse and follow other users' profiles.",
         techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
@@ -21,7 +21,7 @@ const projects = [
         image: `${basePath}/images/projects/project01.webp`, // Remplace par le bon chemin d'image
     },
     {
-        name: 'Okv photogram',
+        name: 'TEST',
         description:
             "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets users share their photos, comment and like others' posts. Users can also browse and follow other users' profiles.",
         techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
@@ -30,7 +30,7 @@ const projects = [
         image: `${basePath}/images/projects/project01.webp`, // Remplace par le bon chemin d'image
     },
     {
-        name: 'Okv photogram',
+        name: 'TEST',
         description:
             "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets users share their photos, comment and like others' posts. Users can also browse and follow other users' profiles.",
         techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
@@ -53,19 +53,19 @@ const ProjectCard = ({ project }) => {
                 <p className="text-gray-600 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-6">
                     {project.techUsed.map((tech: any) => (
-                        <span key={tech} className="bg-gray-200 px-3 py-1 rounded-full text-sm text-gray-700">
+                        <span key={tech} className="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full text-sm text-gray-700 dark:text-gray-200 border-gray-800">
               {tech}
             </span>
                     ))}
                 </div>
                 {/* Boutons visibles uniquement sur desktop et tablette */}
                 <div className="flex gap-4 hidden md:flex">
-                    <a href={project.siteLink} className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+                    {project?.siteLink && <a href={project.siteLink} className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition border-1 border-black">
                         Visit Site →
-                    </a>
+                    </a>}
                     <a
                         href={project.githubLink}
-                        className="text-black border border-black px-4 py-2 rounded-lg hover:bg-gray-100 transition"
+                        className="text-black dark:bg-gray-600 border border-black px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition"
                     >
                         GitHub →
                     </a>
@@ -83,10 +83,13 @@ const ProjectCard = ({ project }) => {
 
             {/* Boutons visibles uniquement sur mobile */}
             <div className="flex gap-4 pt-8 md:hidden">
-                <a href={project.siteLink} className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+                {project?.siteLink && <a href={project.siteLink} className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition border-1 border-black">
                     Visit Site →
-                </a>
-                <a href={project.githubLink} className="text-black border border-black px-4 py-2 rounded-lg hover:bg-gray-100 transition">
+                </a>}
+                <a
+                    href={project.githubLink}
+                    className="text-black dark:bg-gray-600 border border-black px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition"
+                >
                     GitHub →
                 </a>
             </div>
