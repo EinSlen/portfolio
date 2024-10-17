@@ -14,7 +14,6 @@ export default async function Home() {
 
   return (
       <main className="overflow-hidden">
-          <AnimatedGradient/>
           <HeroBanner/>
           <div
               className="relative flex flex-col sm:flex-row gap-3 min-h-[calc(100vh-550px)] md:pt-8 pt-8 items-center justify-center">
