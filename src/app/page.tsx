@@ -13,12 +13,16 @@ import {
 export default async function Home() {
 
   return (
-      <main>
+      <main className="overflow-hidden">
           <AnimatedGradient/>
           <HeroBanner/>
           <Work/>
           <Timeline/>
+          <div
+              id="competence"
+              className="pt-16 pb-16">
           <Competence />
+          </div>
           <Projects/>
           <div
               id="contact"
