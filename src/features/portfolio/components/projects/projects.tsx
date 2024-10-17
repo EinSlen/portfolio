@@ -10,7 +10,24 @@ const projects = [
         githubLink: '#',
         image: `${basePath}/images/projects/project01.webp`, // Remplace par le bon chemin d'image
     },
-    // Ajoute d'autres projets ici si nécessaire
+    {
+        name: 'Okv photogram',
+        description:
+            "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets users share their photos, comment and like others' posts. Users can also browse and follow other users' profiles.",
+        techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
+        siteLink: '#',
+        githubLink: '#',
+        image: `${basePath}/images/projects/project02.png`, // Remplace par le bon chemin d'image
+    },
+    {
+        name: 'Okv photogram',
+        description:
+            "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets users share their photos, comment and like others' posts. Users can also browse and follow other users' profiles.",
+        techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
+        siteLink: '#',
+        githubLink: '#',
+        image: `${basePath}/images/projects/project03.png`, // Remplace par le bon chemin d'image
+    },
 ];
 
 // @ts-ignore
