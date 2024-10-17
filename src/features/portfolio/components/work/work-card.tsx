@@ -5,7 +5,7 @@ export const Work = () => {
         <div className="relative flex flex-col sm:flex-row gap-3 min-h-[calc(100vh-350px)] md:pt-8 pt-8 items-center justify-center">
             <div
                 className="max-w-sm p-6 text-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <Image className="mx-auto pb-5" src={`${process.env.PUBLIC_URL}/images/viously-large.png`} alt="Viously logo" width={96}
+                <Image className="mx-auto pb-5" src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/viously-large.png`} alt="Viously logo" width={96}
                        height={96} loading="lazy"/>
                 <a href="#">
                     <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Développeur
