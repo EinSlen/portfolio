@@ -1,58 +1,79 @@
-"use client"
+import React from 'react';
 
-import Card from "@/components/Card";
-import Typography from "@/components/Typography";
-import {siteConfig} from "@/config";
+const projects = [
+    {
+        name: 'Okv photogram',
+        description:
+            "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets users share their photos, comment and like others' posts. Users can also browse and follow other users' profiles.",
+        techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
+        siteLink: '#',
+        githubLink: '#',
+        image: '/images/projects/project01.webp', // Remplace par le bon chemin d'image
+    },
+    // Ajoute d'autres projets ici si nécessaire
+];
 
-
-export const Projects = async () => {
-    const professionalProjectsData: any = siteConfig.projects;
-
+// @ts-ignore
+const ProjectCard = ({ project }) => {
     return (
-        <main className="container">
-            <div className="flex flex-col gap-2  my-12">
-                <Typography size="h3/semi-bold" className="!text-3xl sm:text-4xl">
-                    Projects
-                </Typography>
-                <Typography size="body2/normal" variant="secondary">
-                    Projects, I’ve worked on
-                </Typography>
-            </div>
-            <span className="w-full block border border-primary-300 absolute right-0"></span>
-
-            <div className="flex flex-col gap-2 my-4 mt-20">
-                <Typography size="h5/semi-bold" variant="secondary">
-                    Professional
-                </Typography>
-
-                <div className="flex flex-col gap-8 mb-4 ">
-                    {professionalProjectsData.length ? (
-                        professionalProjectsData
-                            .sort(
-                                (a: { createdAt: string | number | Date; }, b: { createdAt: string | number | Date; }) =>
-                                    new Date(b.createdAt).getTime() -
-                                    Number(new Date(a.createdAt).getTime())
-                            )
-                            .map((data: { _id: any; title: any; description: any; demoLink: any; githubLink: any; logo: any; thumbnail: any; techUsed: any; }, index: any) => (
-                                <Card
-                                    key={data._id}
-                                    title={data.title}
-                                    description={data.description}
-                                    actionLink={data.demoLink}
-                                    actionText="Visit Site"
-                                    secondaryActionLink={data.githubLink}
-                                    secondaryActiontext="Github"
-                                    projectLogoSrc={data.logo}
-                                    projectScreenshotSrc={data.thumbnail}
-                                    techUsed={data.techUsed}
-                                    variant="projectCard"
-                                />
-                            ))
-                    ) : (
-                        <Typography>No Data found</Typography>
-                    )}
+        <div className="bg-gray-100 rounded-lg p-6 flex flex-col md:flex-row items-center justify-between shadow-lg mb-8 relative">
+            {/* Section texte */}
+            <div className="md:w-1/2 w-full mb-6 md:mb-0 z-10">
+                <div className="flex items-center mb-4">
+                    <span className="text-3xl mr-2">📸</span>
+                    <h3 className="text-3xl font-bold">{project.name}</h3>
+                </div>
+                <p className="text-gray-600 mb-4">{project.description}</p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                    {project.techUsed.map((tech: any) => (
+                        <span key={tech} className="bg-gray-200 px-3 py-1 rounded-full text-sm text-gray-700">
+              {tech}
+            </span>
+                    ))}
+                </div>
+                {/* Boutons visibles uniquement sur desktop et tablette */}
+                <div className="flex gap-4 hidden md:flex">
+                    <a href={project.siteLink} className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+                        Visit Site →
+                    </a>
+                    <a
+                        href={project.githubLink}
+                        className="text-black border border-black px-4 py-2 rounded-lg hover:bg-gray-100 transition"
+                    >
+                        GitHub →
+                    </a>
                 </div>
             </div>
-        </main>
+
+            {/* Section image */}
+            <div className="md:w-1/2 w-full flex justify-center relative">
+                <img
+                    src={project.image}
+                    alt={project.name}
+                    className="rounded-lg shadow-2xl rotate-6 transform md:transform md:translate-x-6 md:translate-y-8 lg:translate-x-6 lg:-translate-y-8 w-3/4 md:w-full object-cover"
+                />
+            </div>
+
+            {/* Boutons visibles uniquement sur mobile */}
+            <div className="flex gap-4 pt-8 md:hidden">
+                <a href={project.siteLink} className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+                    Visit Site →
+                </a>
+                <a href={project.githubLink} className="text-black border border-black px-4 py-2 rounded-lg hover:bg-gray-100 transition">
+                    GitHub →
+                </a>
+            </div>
+        </div>
+    );
+};
+
+export const SelectedWork = () => {
+    return (
+        <section className="container mx-auto px-4 py-8">
+            <h2 className="text-4xl font-bold mb-6">Selected Work</h2>
+            {projects.map((project) => (
+                <ProjectCard key={project.name} project={project} />
+            ))}
+        </section>
     );
 };

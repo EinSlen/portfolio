@@ -22,8 +22,6 @@ const Card = ({
                 techStackIcon,
                 tag,
               }: any) => {
-  // @ts-ignore
-    const ArrowIcon = ''
   return (
       <div
           className={`bg-primary-100 dark:bg-primary-900 border dark:border-primary-700  shadow-md ${
@@ -257,7 +255,7 @@ const Card = ({
             {techStackIcon ? (
               <div className="flex justify-center items-center transition  ease-in-out duration-500 group-hover:scale-110">
                 <span className="hidden absolute -top-2 -right-6 group-hover:block">
-                  <ArrowIcon className="w-6 h-6 rotate-45 hidden sm:block dark:stroke-primary-50" />
+
                 </span>
                 {techStackIcon}
               </div>

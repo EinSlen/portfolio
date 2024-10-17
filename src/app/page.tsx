@@ -1,13 +1,13 @@
 
 import { AnimatedGradient } from "@/components"
 import {
-  GetInTouch,
-  HeroBanner,
+    GetInTouch,
+    HeroBanner,
     Timeline,
     Projects,
     Work,
     Competence,
-    BeyondTheCode
+    BeyondTheCode, SelectedWork
 } from "@/features/portfolio"
 
 
@@ -28,7 +28,7 @@ export default async function Home() {
                   className="pb-16 pt-32">
                   <Competence/>
               </div>
-              <Projects/>
+              <SelectedWork/>
               <div
                   id="contact"
                   className="flex min-h-[calc(100vh-160px)] items-center justify-center py-20">
