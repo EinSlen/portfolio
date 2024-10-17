@@ -26,8 +26,7 @@ export default async function Home() {
           <Projects/>
           <div
               id="contact"
-              className="flex min-h-[calc(100vh-160px)] items-center justify-center py-20"
-          >
+              className="flex min-h-[calc(100vh-160px)] items-center justify-center py-20">
               <GetInTouch/>
           </div>
       </main>
