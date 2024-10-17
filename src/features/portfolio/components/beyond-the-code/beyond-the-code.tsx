@@ -1,3 +1,5 @@
+"use client"
+
 export const BeyondTheCode = () => {
     const hobbies = [
         { name: 'Gaming', emoji: '🎮' },

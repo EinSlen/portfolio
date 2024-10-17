@@ -1,3 +1,5 @@
+"use client"
+
 export const Competence = () => {
     return (
         <div className="relative h-32"> {/* Augmenté la hauteur pour faire de la place au h1 */}

@@ -1,8 +1,9 @@
+"use client"
 
 import Card from "@/components/Card";
 import Typography from "@/components/Typography";
-import { Metadata } from "next";
 import {siteConfig} from "@/config";
+
 
 export const Projects = async () => {
     const professionalProjectsData: any = siteConfig.projects;
