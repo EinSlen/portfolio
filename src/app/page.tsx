@@ -1,4 +1,5 @@
 import React, { Suspense } from "react";
+import Loader from "@/components/loader";
 const AnimatedGradient = React.lazy(() => import("@/components/animated-gradient"));
 const HeroBanner = React.lazy(() => import("@/features/portfolio/components/hero-banner/hero-banner"));
 const Work = React.lazy(() => import("@/features/portfolio/components/work/work-card"));
@@ -11,31 +12,31 @@ const GetInTouch = React.lazy(() => import("@/features/portfolio/components/get-
 export default function Home() {
     return (
         <main className="overflow-hidden">
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loader />}>
                 <AnimatedGradient />
                 <HeroBanner />
             </Suspense>
             <div className="relative flex flex-col sm:flex-row gap-3 min-h-[calc(100vh-550px)] md:pt-8 pt-8 items-center justify-center">
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<Loader />}>
                     <Work />
                 </Suspense>
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<Loader />}>
                     <BeyondTheCode />
                 </Suspense>
             </div>
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loader />}>
                 <Timeline />
             </Suspense>
             <div id="competence" className="pb-16 pt-32">
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<Loader />}>
                     <Competence />
                 </Suspense>
             </div>
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loader />}>
                 <SelectedWork />
             </Suspense>
             <div id="contact" className="flex min-h-[calc(100vh-160px)] items-center justify-center py-20">
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<Loader />}>
                     <GetInTouch />
                 </Suspense>
             </div>
