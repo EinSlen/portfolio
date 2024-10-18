@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 
 import Loader from "@/components/loader";
 const components = {
-    AnimatedGradient: dynamic(() => import('@/components/animated-gradient'), { ssr: true }),
+    AnimatedGradient: dynamic(() => import('@/components/animated-gradient'), { ssr: false }),
     HeroBanner: dynamic(() => import('@/features/portfolio/components/hero-banner/hero-banner'), { ssr: false }),
     Work: dynamic(() => import('@/features/portfolio/components/work/work-card'), { ssr: false }),
     BeyondTheCode: dynamic(() => import('@/features/portfolio/components/beyond-the-code/beyond-the-code'), { ssr: false }),
