@@ -1,6 +1,6 @@
 "use client"
 
-export const Timeline = () => {
+const Timeline = () => {
     return (
         <div className="relative flex flex-col min-h-[calc(100vh-350px)] md:pt-8 pt-8 items-center justify-center pl-5 lg:pl-0">
             {/* Text Above the Timeline */}
@@ -74,3 +74,5 @@ export const Timeline = () => {
         </div>
     );
 };
+
+export default Timeline;
