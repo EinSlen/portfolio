@@ -78,6 +78,7 @@ const ProjectCard = ({ project }) => {
                     src={project.image}
                     alt={project.name}
                     className="rounded-lg shadow-2xl rotate-6 transform md:transform md:translate-x-6 md:translate-y-8 lg:translate-x-6 lg:-translate-y-8 w-3/4 md:w-full object-cover"
+                    loading="lazy"
                 />
             </div>
 
