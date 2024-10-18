@@ -7,7 +7,6 @@ import { Background } from "./background"
 import { MobileNav } from "./mobile-nav"
 import { Nav } from "./nav"
 import { ThemeToggle } from "./theme-toggle"
-import {LanguageToggle} from "@/components/header/language-toggle";
 
 const name = siteConfig.name
 const nav = siteConfig.header.nav
@@ -30,13 +29,9 @@ export const Header = () => {
             <div className="flex space-x-2">
               <ThemeToggle/>
             </div>
-            <div className="flex space-x-2">
-              <LanguageToggle/>
-            </div>
           </div>
           <div className="flex flex-1 sm:hidden ">
             <div className="flex-1" />
-            <LanguageToggle/>
             <ThemeToggle />
             <MobileNav />
           </div>

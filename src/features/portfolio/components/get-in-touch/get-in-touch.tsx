@@ -1,16 +1,14 @@
-"use client"
+
 
 import React from "react"
 import { siteConfig } from "@/config"
 import { Button } from "@/components/ui"
 import { CopyButton } from "./copy-button"
-import {useTranslation} from "react-i18next";
 
 const data = siteConfig.contact
 const mail = siteConfig.links.mail
 
 const GetInTouch = () => {
-  const { t } = useTranslation();
 
   return (
     <div className="container max-w-xl text-center">
