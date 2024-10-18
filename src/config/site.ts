@@ -47,12 +47,12 @@ export const siteConfig: ISiteConfig = {
         "Retrouvez mes projets et mes compétences à travers ce portfolio.",
     callToActions: [
       {
-        label: "Read the blog",
-        href: "/blog",
+        label: "Télécharger mon CV",
+        href: "/",
       },
       {
         label: "Explore my projects",
-        href: "/#projects",
+        href: "#projects",
       },
     ],
   },
