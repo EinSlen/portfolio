@@ -1,3 +1,4 @@
+"use client"
 
 import React from "react"
 import { siteConfig } from "@/config"
@@ -9,6 +10,7 @@ const data = siteConfig.contact
 const mail = siteConfig.links.mail
 
 const GetInTouch = () => {
+  const { t } = useTranslation();
 
   return (
     <div className="container max-w-xl text-center">
