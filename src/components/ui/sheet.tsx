@@ -4,7 +4,6 @@ import * as React from "react"
 import * as SheetPrimitive from "@radix-ui/react-dialog"
 import { cn } from "@/utils"
 import { type VariantProps, cva } from "class-variance-authority"
-import { X } from "lucide-react"
 
 const Sheet = SheetPrimitive.Root
 
@@ -70,26 +69,37 @@ const SheetContent = React.forwardRef<
       {...props}
     >
       {children}
-      <SheetPrimitive.Close className="ring-offset-background focus:ring-ring data-[state=open]:bg-secondary absolute right-4 top-4 rounded-sm opacity-70 transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none">
-        <X className="h-4 w-4" />
-        <span className="sr-only">Close</span>
-      </SheetPrimitive.Close>
+        <SheetPrimitive.Close
+            className="ring-offset-background focus:ring-ring data-[state=open]:bg-secondary absolute right-4 top-4 rounded-sm opacity-70 transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 text-gray-200"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+            >
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+            <span className="sr-only">Close</span>
+        </SheetPrimitive.Close>
     </SheetPrimitive.Content>
   </SheetPortal>
 ))
 SheetContent.displayName = SheetPrimitive.Content.displayName
 
 const SheetHeader = ({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) => (
-  <div
-    className={cn(
-      "flex flex-col space-y-2 text-center sm:text-left",
-      className
-    )}
-    {...props}
-  />
+                         className,
+                         ...props
+                     }: React.HTMLAttributes<HTMLDivElement>) => (
+    <div
+        className={cn(
+            "flex flex-col space-y-2 text-center sm:text-left",
+            className
+        )}
+        {...props}
+    />
 )
 SheetHeader.displayName = "SheetHeader"
 
