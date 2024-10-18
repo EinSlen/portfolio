@@ -5,11 +5,11 @@ import Loader from "@/components/loader";
 const components = {
     AnimatedGradient: dynamic(() => import('@/components/animated-gradient'), { ssr: false }),
     HeroBanner: dynamic(() => import('@/features/portfolio/components/hero-banner/hero-banner'), { ssr: false }),
-    Work: dynamic(() => import('@/features/portfolio/components/work/work-card'), { ssr: false }),
-    BeyondTheCode: dynamic(() => import('@/features/portfolio/components/beyond-the-code/beyond-the-code'), { ssr: false }),
-    Timeline: dynamic(() => import('@/features/portfolio/components/timeline/timeline'), { ssr: false }),
-    Competence: dynamic(() => import('@/features/portfolio/components/competence/competence'), { ssr: false }),
-    SelectedWork: dynamic(() => import('@/features/portfolio/components/projects/projects'), { ssr: false }),
+    Work: dynamic(() => import('@/features/portfolio/components/work-card'), { ssr: false }),
+    BeyondTheCode: dynamic(() => import('@/features/portfolio/components/beyond-the-code'), { ssr: false }),
+    Timeline: dynamic(() => import('@/features/portfolio/components/timeline'), { ssr: false }),
+    Competence: dynamic(() => import('@/features/portfolio/components/competence'), { ssr: false }),
+    SelectedWork: dynamic(() => import('@/features/portfolio/components/projects'), { ssr: false }),
     GetInTouch: dynamic(() => import('@/features/portfolio/components/get-in-touch/get-in-touch'), { ssr: false }),
 };
 
