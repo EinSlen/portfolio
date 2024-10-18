@@ -16,6 +16,10 @@ export const siteConfig: ISiteConfig = {
   header: {
     nav: [
       {
+        title: "Home",
+        href: "/",
+      },
+      {
         title: "School",
         href: "#school",
       },

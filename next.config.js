@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  compress: true,
   typescript: {
     // TODO: Remove it for later
     ignoreBuildErrors: true,
