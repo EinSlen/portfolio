@@ -10,10 +10,10 @@ const Work = () => {
                 <Image className="mx-auto pb-5" src={`${basePath}/images/viously-large.png`} alt="Viously logo" width={96}
                        height={96} loading="lazy"  layout="fixed"  quality={5}  />
                 <a href="#">
-                    <span className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Développeur
-                        Frontend - Viously</span>
+                    <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Développeur
+                        Frontend - Viously</h5>
                 </a>
-                <p className="mb-3 pt-2 font-normal text-gray-500 dark:text-gray-400">Suivez ce guide étape par étape
+                <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">Suivez ce guide étape par étape
                     pour savoir comment certifier vos avantages hebdomadaires :</p>
                 <a href="#" className="inline-flex font-medium items-center text-blue-600 hover:underline">
                     Voir notre guide
