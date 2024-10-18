@@ -3,10 +3,7 @@ import { INavItem } from "./nav"
 export interface ILinks {
   github?: string
   linkedin?: string
-  twitter?: string
   mail: string
-  codepen?: string
-  instagram?: string
 }
 
 export interface IHeroBanner {
