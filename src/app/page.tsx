@@ -1,13 +1,15 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
+import dynamic from 'next/dynamic';
+
 import Loader from "@/components/loader";
-const AnimatedGradient = React.lazy(() => import("@/components/animated-gradient"));
-const HeroBanner = React.lazy(() => import("@/features/portfolio/components/hero-banner/hero-banner"));
-const Work = React.lazy(() => import("@/features/portfolio/components/work/work-card"));
-const BeyondTheCode = React.lazy(() => import("@/features/portfolio/components/beyond-the-code/beyond-the-code"));
-const Timeline = React.lazy(() => import("@/features/portfolio/components/timeline/timeline"));
-const Competence = React.lazy(() => import("@/features/portfolio/components/competence/competence"));
-const SelectedWork = React.lazy(() => import("@/features/portfolio/components/projects/projects"));
-const GetInTouch = React.lazy(() => import("@/features/portfolio/components/get-in-touch/get-in-touch"));
+const AnimatedGradient = dynamic(() => import("@/components/animated-gradient"),  { ssr: true });
+const HeroBanner = dynamic(() => import("@/features/portfolio/components/hero-banner/hero-banner"),  { ssr: false });
+const Work =dynamic(() => import("@/features/portfolio/components/work/work-card"), { ssr: false });
+const BeyondTheCode = dynamic(() => import("@/features/portfolio/components/beyond-the-code/beyond-the-code"), { ssr: false });
+const Timeline = dynamic(() => import("@/features/portfolio/components/timeline/timeline"), { ssr: false });
+const Competence = dynamic(() => import("@/features/portfolio/components/competence/competence"), { ssr: false });
+const SelectedWork = dynamic(() => import("@/features/portfolio/components/projects/projects"), { ssr: false });
+const GetInTouch = dynamic(() => import("@/features/portfolio/components/get-in-touch/get-in-touch"), { ssr: false });
 
 export default function Home() {
     return (
