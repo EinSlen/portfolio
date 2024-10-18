@@ -21,15 +21,15 @@ export const siteConfig: ISiteConfig = {
       },
       {
         title: "Blog",
-        href: "/blog",
+        href: "/",
       },
       {
         title: "Courses",
-        href: "/courses",
+        href: "/",
       },
       {
         title: "Useful tools",
-        href: "/tools",
+        href: "/",
       },
     ],
   },
