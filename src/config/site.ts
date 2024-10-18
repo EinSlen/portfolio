@@ -9,9 +9,6 @@ export const siteConfig: ISiteConfig = {
     mail: "valentin.damlencourt@gmail.com",
     linkedin: "https://linkedin.com/mehdibha",
     github: "https://github.com/mehdibha",
-    twitter: "https://twitter.com/mehdibha_",
-    instagram: "https://www.instagram.com/mehdibha.com",
-    codepen: "https://codepen.io/mehdi-ben-hadj-ali",
   },
   header: {
     nav: [
