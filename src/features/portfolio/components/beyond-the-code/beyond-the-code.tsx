@@ -1,4 +1,4 @@
-"use client"
+
 
 const BeyondTheCode = () => {
     const hobbies = [
