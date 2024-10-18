@@ -132,6 +132,34 @@
   }
 }
 
+/* styles/print.css */
+@media print {
+  body {
+    font-size: 12pt;
+    color: black;
+    background: none;
+  }
+
+  /* Cacher les éléments non pertinents à l'impression */
+  nav, footer, .no-print {
+    display: none;
+  }
+
+  /* Ajuster les marges pour l'impression */
+  .content {
+    margin: 0;
+    padding: 1cm;
+  }
+
+  /* Ajuster la taille des images pour l'impression */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Ajouter des styles spécifiques si nécessaire */
+}
+
 
 
 
