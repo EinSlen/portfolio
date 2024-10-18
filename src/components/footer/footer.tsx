@@ -49,7 +49,7 @@ export const Footer = async () => {
               const Icon = icons[key as keyof ILinks]
               return (
                 <a key={key} href={links[key as keyof ILinks]} target="_blank">
-                  <Button size="icon" variant="ghost">
+                  <Button ariaLabel={`icon ${key}`} size="icon" variant="ghost">
                     <Icon />
                   </Button>
                 </a>
