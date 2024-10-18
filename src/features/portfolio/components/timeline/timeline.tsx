@@ -21,14 +21,14 @@ const Timeline = () => {
                     d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
             </svg>
         </span>
-                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">BUT Informatique <span
+                    <span className="flex -translate-y-[5px] items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">BUT Informatique <span
                             className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">Latest</span>
-                    </h3>
+                    </span>
                     <time
                         className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released
                         on January 13th, 2022
                     </time>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"> BUT informatique desc "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    <p className="mb-4 -pt-1 text-base font-normal text-gray-500 dark:text-gray-400"> BUT informatique desc "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         <br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br/> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
                     <a href="#"
                        className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
@@ -47,7 +47,7 @@ const Timeline = () => {
                     d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
             </svg>
         </span>
-                    <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Prepa Scientifique</h3>
+                    <span className="flex -translate-y-[5px] mb-1 text-lg font-semibold text-gray-900 dark:text-white">Prepa Scientifique</span>
                     <time
                         className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released
                         on December 7th, 2021
@@ -63,7 +63,7 @@ const Timeline = () => {
                     d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
             </svg>
         </span>
-                    <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Baccalauréat Scientifique</h3>
+                    <span className="flex -translate-y-[5px] mb-1 text-lg font-semibold text-gray-900 dark:text-white">Baccalauréat Scientifique</span>
                     <time
                         className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released
                         on December 2nd, 2021
