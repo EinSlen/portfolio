@@ -24,7 +24,7 @@ export const CopyButton = () => {
   }
   return (
     <>
-      <Button variant="ghost" size="icon" onClick={handleClick}>
+      <Button ariaLabel="copy" variant="ghost" size="icon" onClick={handleClick}>
         <Copy />
       </Button>
       <Toaster />

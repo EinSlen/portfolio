@@ -105,7 +105,7 @@ export const SelectedWork = () => {
                 <ProjectCard key={project.name} project={project} />
             ))}
             <div className="text-center">
-            <Button size="lg" variant={"outline"}>
+            <Button ariaLabel="Show more" size="lg" variant={"outline"}>
                 <a href={""}>Show more...</a>
             </Button></div>
         </section>

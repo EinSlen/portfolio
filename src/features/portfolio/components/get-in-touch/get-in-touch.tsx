@@ -20,7 +20,7 @@ export const GetInTouch = () => {
         <p>{mail}</p>
         <CopyButton />
       </div>
-      <Button size="lg" asChild>
+      <Button ariaLabel="call action" size="lg" asChild>
         <a href={data.callToAction.href}>{data.callToAction.label}</a>
       </Button>
     </div>

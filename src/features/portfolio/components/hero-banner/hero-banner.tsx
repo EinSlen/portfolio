@@ -31,6 +31,7 @@ export const HeroBanner = () => {
             <Button
               key={index}
               asChild
+              ariaLabel="Call action"
               size="lg"
               variant={index === 0 ? "default" : "neutral"}
             >
