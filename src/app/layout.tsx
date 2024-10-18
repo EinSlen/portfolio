@@ -1,9 +1,7 @@
 import { Metadata } from "next"
-import localFont from "next/font/local"
 import { Footer, Header, ThemeProvider } from "@/components"
 import { REVALIDATE_TIME, siteConfig } from "@/config"
 import "@/styles/globals.css"
-// import "@/styles/notion.css"
 
 export const revalidate = REVALIDATE_TIME
 
@@ -19,8 +17,6 @@ export const metadata: Metadata = {
   ],
   icons: {
     icon: "./favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: siteConfig.name,
@@ -29,19 +25,13 @@ export const metadata: Metadata = {
   },
 }
 
-const display = localFont({
-  src: "../assets/fonts/Acorn-Bold.woff2",
-  variable: "--font-display",
-  display: "swap",
-})
-
 interface RootLayoutProps {
   children: React.ReactNode
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" className={`${display.variable}`}>
+    <html lang="fr">
       <body>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Header />

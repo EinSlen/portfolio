@@ -14,7 +14,7 @@ const GetInTouch = () => {
 
   return (
     <div className="container max-w-xl text-center">
-      <h2 className="font-display mb-4 text-4xl">{data.title}</h2>
+      <h2 className="font-display mb-4 font-bold text-4xl">{data.title}</h2>
       <p className="mb-4">{data.description}</p>
       <div className="mb-4 flex items-center justify-center space-x-2 font-semibold">
         <p>{mail}</p>
