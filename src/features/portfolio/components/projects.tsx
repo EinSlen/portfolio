@@ -27,7 +27,7 @@ const projects = [
         techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
         siteLink: '#',
         githubLink: '#',
-        image: `${basePath}/images/projects/image.avif`, // Remplace par le bon chemin d'image
+        image: `${basePath}/images/projects/image.webp`, // Remplace par le bon chemin d'image
     },
     {
         name: 'TEST',
@@ -36,7 +36,7 @@ const projects = [
         techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
         siteLink: '#',
         githubLink: '#',
-        image: `${basePath}/images/projects/pokemon.avif`, // Remplace par le bon chemin d'image
+        image: `${basePath}/images/projects/pokemon.webp`, // Remplace par le bon chemin d'image
     },
 ];
 
