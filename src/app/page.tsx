@@ -2,16 +2,28 @@ import { Suspense } from "react";
 import dynamic from 'next/dynamic';
 
 import Loader from "@/components/loader";
-const AnimatedGradient = dynamic(() => import("@/components/animated-gradient"),  { ssr: true });
-const HeroBanner = dynamic(() => import("@/features/portfolio/components/hero-banner/hero-banner"),  { ssr: false });
-const Work =dynamic(() => import("@/features/portfolio/components/work/work-card"), { ssr: false });
-const BeyondTheCode = dynamic(() => import("@/features/portfolio/components/beyond-the-code/beyond-the-code"), { ssr: false });
-const Timeline = dynamic(() => import("@/features/portfolio/components/timeline/timeline"), { ssr: false });
-const Competence = dynamic(() => import("@/features/portfolio/components/competence/competence"), { ssr: false });
-const SelectedWork = dynamic(() => import("@/features/portfolio/components/projects/projects"), { ssr: false });
-const GetInTouch = dynamic(() => import("@/features/portfolio/components/get-in-touch/get-in-touch"), { ssr: false });
+const components = {
+    AnimatedGradient: dynamic(() => import('@/components/animated-gradient'), { ssr: true }),
+    HeroBanner: dynamic(() => import('@/features/portfolio/components/hero-banner/hero-banner'), { ssr: false }),
+    Work: dynamic(() => import('@/features/portfolio/components/work/work-card'), { ssr: false }),
+    BeyondTheCode: dynamic(() => import('@/features/portfolio/components/beyond-the-code/beyond-the-code'), { ssr: false }),
+    Timeline: dynamic(() => import('@/features/portfolio/components/timeline/timeline'), { ssr: false }),
+    Competence: dynamic(() => import('@/features/portfolio/components/competence/competence'), { ssr: false }),
+    SelectedWork: dynamic(() => import('@/features/portfolio/components/projects/projects'), { ssr: false }),
+    GetInTouch: dynamic(() => import('@/features/portfolio/components/get-in-touch/get-in-touch'), { ssr: false }),
+};
 
 export default function Home() {
+    const {
+        AnimatedGradient,
+        HeroBanner,
+        Work,
+        BeyondTheCode,
+        Timeline,
+        Competence,
+        SelectedWork,
+        GetInTouch
+    } = components;
     return (
         <main className="overflow-hidden">
             <Suspense fallback={<Loader />}>
