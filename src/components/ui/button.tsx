@@ -48,7 +48,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
                 className={cn(buttonVariants({ variant, size, className }))}
                 ref={ref}
                 id={ariaLabel}
-               // aria-label={ariaLabel} // Ajout de aria-label
+                aria-label={ariaLabel} // Ajout de aria-label
                 name={ariaLabel}
                 {...props}
             />
