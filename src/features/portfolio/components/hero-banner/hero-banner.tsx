@@ -6,7 +6,7 @@ import { MouseScrollAnimation } from "./mouse-scroll-animation"
 
 const data = siteConfig.heroBanner
 
-const HeroBanner = () => {
+export const HeroBanner = () => {
   return (
     <div className="relative flex min-h-[calc(100vh-64px)] items-center justify-center p-4">
       <div className="pb-28">
@@ -48,5 +48,3 @@ const HeroBanner = () => {
     </div>
   )
 }
-
-export default HeroBanner;

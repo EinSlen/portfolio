@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import {basePath} from '@/utils'
 
-const Work = () => {
+export const Work = () => {
     return (
             <div
                 className="max-w-sm p-6 text-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full">
@@ -26,5 +26,3 @@ const Work = () => {
             </div>
     );
 }
-
-export default Work;

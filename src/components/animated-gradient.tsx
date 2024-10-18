@@ -2,7 +2,7 @@
 
 import { Variants, motion } from "framer-motion"
 
-const AnimatedGradient = () => (
+export const AnimatedGradient = () => (
   <div
     style={{ position: "absolute", width: "100%", zIndex: "-1", opacity: 0.7 }}
   >
@@ -95,5 +95,3 @@ const Gradient = () => {
     </svg>
   )
 }
-
-export default AnimatedGradient;

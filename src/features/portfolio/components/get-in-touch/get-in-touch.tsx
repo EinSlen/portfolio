@@ -9,7 +9,7 @@ import {useTranslation} from "react-i18next";
 const data = siteConfig.contact
 const mail = siteConfig.links.mail
 
-const GetInTouch = () => {
+export const GetInTouch = () => {
   const { t } = useTranslation();
 
   return (
@@ -26,5 +26,3 @@ const GetInTouch = () => {
     </div>
   )
 }
-
-export default GetInTouch;

@@ -1,6 +1,6 @@
 "use client"
 
-const Competence = () => {
+export const Competence = () => {
     return (
         <div className="relative h-32"> {/* Augmenté la hauteur pour faire de la place au h1 */}
             {/* Titre au-dessus de la banderole */}
@@ -16,5 +16,3 @@ const Competence = () => {
         </div>
     );
 };
-
-export default Competence;

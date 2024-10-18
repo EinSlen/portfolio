@@ -97,7 +97,7 @@ const ProjectCard = ({ project }) => {
     );
 };
 
-const SelectedWork = () => {
+export const SelectedWork = () => {
     return (
         <section className="container mx-auto px-4 py-8 pt-32">
             <h2 className="text-4xl font-bold mb-6">Selected Work</h2>
@@ -111,5 +111,3 @@ const SelectedWork = () => {
         </section>
     );
 };
-
-export default SelectedWork;
