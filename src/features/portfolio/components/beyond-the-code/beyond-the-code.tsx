@@ -1,6 +1,6 @@
 "use client"
 
-export const BeyondTheCode = () => {
+const BeyondTheCode = () => {
     const hobbies = [
         { name: 'Gaming', emoji: '🎮' },
         { name: 'Hiking', emoji: '🥾' },
@@ -32,3 +32,5 @@ export const BeyondTheCode = () => {
         </div>
     );
 };
+
+export default BeyondTheCode;
