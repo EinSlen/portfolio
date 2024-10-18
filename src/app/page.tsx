@@ -26,34 +26,39 @@ export default function Home() {
     } = components;
     return (
         <main className="overflow-hidden">
-            <Suspense fallback={<Loader />}>
-                <AnimatedGradient />
-                <HeroBanner />
+            <Suspense fallback={<Loader/>}>
+                <AnimatedGradient/>
+                <HeroBanner/>
             </Suspense>
-            <div className="relative flex flex-col sm:flex-row gap-3 min-h-[calc(100vh-550px)] md:pt-8 pt-8 items-center justify-center">
-                <Suspense fallback={<Loader />}>
-                    <Work />
+            <div
+                className="relative flex flex-col sm:flex-row gap-3 min-h-[calc(100vh-550px)] md:pt-8 pt-8 items-center justify-center">
+                <Suspense fallback={<Loader/>}>
+                    <Work/>
                 </Suspense>
-                <Suspense fallback={<Loader />}>
-                    <BeyondTheCode />
+                <Suspense fallback={<Loader/>}>
+                    <BeyondTheCode/>
                 </Suspense>
             </div>
-            <Suspense fallback={<Loader />}>
-                <Timeline />
+            <div id="school">
+            <Suspense fallback={<Loader/>}>
+                <Timeline/>
             </Suspense>
+            </div>
             <div id="competence" className="pb-16 pt-32">
-                <Suspense fallback={<Loader />}>
-                    <Competence />
+                <Suspense fallback={<Loader/>}>
+                    <Competence/>
                 </Suspense>
             </div>
-            <Suspense fallback={<Loader />}>
-                <SelectedWork />
-            </Suspense>
-            <div id="contact" className="flex min-h-[calc(100vh-160px)] items-center justify-center py-20">
-                <Suspense fallback={<Loader />}>
-                    <GetInTouch />
+            <div id="work">
+                <Suspense fallback={<Loader/>}>
+                    <SelectedWork/>
                 </Suspense>
             </div>
+                <div id="contact" className="flex min-h-[calc(100vh-160px)] items-center justify-center py-20">
+                    <Suspense fallback={<Loader/>}>
+                        <GetInTouch/>
+                    </Suspense>
+                </div>
         </main>
-    );
+);
 }
