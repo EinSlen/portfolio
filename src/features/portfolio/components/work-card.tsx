@@ -13,7 +13,7 @@ const Work = () => {
                 </a>
                 <p className="mb-3 pt-2 font-normal text-gray-500 dark:text-gray-400">Suivez ce guide étape par étape
                     pour savoir comment certifier vos avantages hebdomadaires :</p>
-                <a href="#" className="inline-flex font-medium items-center text-blue-600 hover:underline">
+                <a href="#" className="inline-flex font-medium items-center text-blue-800 hover:underline">
                     Voir notre guide
                     <svg className="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
