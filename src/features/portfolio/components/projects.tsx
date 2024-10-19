@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
         <div className="dark:bg-gray-800 dark:border-gray-700 bg-white rounded-lg p-6 flex flex-col md:flex-row items-center justify-between shadow-lg mb-8 relative">
             <div className="w-full mb-6 md:mb-0 z-10">
                 <div className="flex items-center mb-4">
-                    <span className="text-3xl mr-2">📸</span>
+                    <span className="text-3xl mr-2">{project.emoji}</span>
                     <h3 className="text-3xl font-bold text-gray-900 dark:text-white">{project.name}</h3>
                 </div>
                 <p className="text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
@@ -24,7 +24,7 @@ const ProjectCard = ({ project }) => {
                 <div className="flex gap-4 hidden md:flex">
                     {project?.siteLink && (
                         <a href={project.siteLink} className="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition duration-200 border border-gray-900">
-                            Visit Site →
+                            Voir le Site →
                         </a>
                     )}
                     <a
@@ -49,7 +49,7 @@ const ProjectCard = ({ project }) => {
             <div className="flex gap-4 pt-8 md:hidden">
                 {project?.siteLink && (
                     <a href={project.siteLink} className="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition duration-200 border border-gray-900">
-                        Visit Site →
+                        Voir le Site →
                     </a>
                 )}
                 <a
@@ -67,7 +67,7 @@ const ProjectCard = ({ project }) => {
 const SelectedWork = () => {
     return (
         <section className="container mx-auto px-4 py-8 pt-32">
-            <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Selected Work</h2>
+            <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Projets Sélectionnés</h2>
             {projects.map((project: any) => (
                 <ProjectCard key={project.name} project={project} />
             ))}

@@ -32,6 +32,7 @@ export interface IContact {
 export interface IProject {
   name: string
   image: string
+  emoji ?: string
   description?: string
   techUsed: string[]
   siteLink?: string
