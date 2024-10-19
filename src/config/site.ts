@@ -45,7 +45,7 @@ export const siteConfig: ISiteConfig = {
     callToActions: [
       {
         label: "Télécharger mon CV",
-        href: "/",
+        href: "#tv",
       },
       {
         label: "Explore my projects",
