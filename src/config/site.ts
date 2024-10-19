@@ -46,7 +46,7 @@ export const siteConfig: ISiteConfig = {
     callToActions: [
       {
         label: "Télécharger mon CV",
-        href: `${basePath}/cv.pdf`,
+        href: `/cv.pdf`,
       },
       {
         label: "Explore my projects",
