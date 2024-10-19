@@ -17,16 +17,15 @@ const Timeline = () => {
                     <span className="flex -translate-y-[5px] items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
                         BUT Informatique 
                         <span className="bg-blue-200 text-blue-900 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-700 dark:text-blue-200 ms-3">
-                            Latest
+                            En cours
                         </span>
                     </span>
                     <time className="block mb-2 text-sm font-normal leading-none text-gray-700 dark:text-gray-300">
-                        Released on January 13th, 2022
+                        Du 15 septembre, 2022 - Aujourd'hui
                     </time>
                     <p className="mb-4 -pt-1 text-base font-normal text-gray-700 dark:text-gray-300">
-                        BUT informatique desc "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        <br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        <br/> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..
+                        Actuellement en BUT Informatique à <strong>l'IUT de Lens</strong>, ce parcours me permet<br/> d'acquérir des compétences solides en développement web, gestion de bases de données et en programmation.
+                        <br/>J'y apprends les technologies modernes pour construire des applications performantes et innovantes.
                     </p>
                     <a href="https://www.iut-lens.univ-artois.fr/"
                        className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-800 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-800 dark:bg-gray-800 dark:text-gray-200 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
@@ -50,10 +49,10 @@ const Timeline = () => {
                         Prepa Scientifique
                     </span>
                     <time className="block mb-2 text-sm font-normal leading-none text-gray-700 dark:text-gray-300">
-                        Released on December 7th, 2021
+                        Le 13 septembre, 2021
                     </time>
                     <p className="text-base font-normal text-gray-700 dark:text-gray-300">
-                        Prepa scientifique desc.
+                        J'ai suivi une classe préparatoire scientifique à <strong>Valencienne</strong> qui m'a permis d'acquérir des bases solides<br/> en mathématiques et en physique. Cette expérience m'a préparé aux exigences des études supérieures.
                     </p>
                 </li>
 
@@ -68,11 +67,10 @@ const Timeline = () => {
                         Baccalauréat Scientifique
                     </span>
                     <time className="block mb-2 text-sm font-normal leading-none text-gray-700 dark:text-gray-300">
-                        Released on December 2nd, 2021
+                        Diplômé le 7 décembre, 2021
                     </time>
                     <p className="text-base font-normal text-gray-700 dark:text-gray-300">
-                        baccalauréat desc
-                    </p>
+                        J'ai obtenu mon baccalauréat avec mention au lycée <strong>Henry D'Arras</strong>, ce qui m'a ouvert les portes<br/> de l'enseignement supérieur dans le domaine des sciences et de la technologie/Informatique.                    </p>
                 </li>
             </ol>
         </div>
