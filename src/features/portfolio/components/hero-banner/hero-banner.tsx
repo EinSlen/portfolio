@@ -27,7 +27,17 @@ const HeroBanner = () => {
         </h1>
         <h2 className="mb-8 text-center text-lg md:text-xl">{data.subtitle}</h2>
         <div className="flex justify-center space-x-2 sm:space-x-4">
+          {data.callToActions.map((elem, index) => (
+            <Button
+              key={index}
+              asChild
+              ariaLabel="Call action"
+              size="lg"
+              variant={index === 0 ? "default" : "neutral"}
+            >
 
+            </Button>
+          ))}
         </div>
       </div>
       <div className="absolute bottom-5 left-1/2 translate-x-[-50%]">
