@@ -16,7 +16,7 @@ const HeroBanner = () => {
               {data.title[sectionKey].map((item, index) => (
                 <span
                   key={index}
-                  className={` text-9xlxl font-bold`}
+                  className={`${item?.highlighted ? "text-primary" : ""} text-9xlxl font-bold`}
                 >
                   {item.text}
                 </span>
