@@ -35,9 +35,6 @@ const HeroBanner = () => {
               size="lg"
               variant={index === 0 ? "default" : "neutral"}
             >
-              <Link href={elem.href} scroll={true}>
-                {elem.label}
-              </Link>
             </Button>
           ))}
         </div>
