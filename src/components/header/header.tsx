@@ -1,5 +1,4 @@
 import React, { Suspense } from "react"
-import Link from "next/link"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/utils"
 import { Background } from "./background"
@@ -15,12 +14,12 @@ export const Header = () => {
     <header className={cn("sticky top-0 z-40 w-full")}>
       <div className="relative">
         <div className="container flex h-16 items-center px-4 sm:px-8">
-          <Link
+          <a
             href="/"
             className="mr-8 flex items-center space-x-2 transition-all hover:opacity-80"
           >
             <span className="inline-block font-bold">{"<"+name+"/>"}</span>
-          </Link>
+          </a>
           <div className="hidden flex-1 sm:flex">
             <div className="flex-1">
               <Nav items={nav}/>
