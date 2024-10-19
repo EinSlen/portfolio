@@ -24,7 +24,25 @@ export default function Home() {
     } = components;
     return (
         <main className="overflow-hidden">
-
+                <AnimatedGradient/>
+                <HeroBanner/>
+            <div
+                className="relative flex flex-col sm:flex-row gap-3 min-h-[calc(100vh-550px)] md:pt-8 pt-8 items-center justify-center">
+                    <Work/>
+                    <BeyondTheCode/>
+            </div>
+            <div id="school">
+                <Timeline/>
+            </div>
+            <div id="competence" className="pb-16 pt-32">
+                    <Competence/>
+            </div>
+            <div id="work">
+                    <SelectedWork/>
+            </div>
+                <div id="contact" className="flex min-h-[calc(100vh-160px)] items-center justify-center py-20">
+                        <GetInTouch/>
+                </div>
         </main>
 );
 }
