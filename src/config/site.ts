@@ -1,5 +1,4 @@
 import { ISiteConfig } from "@/types"
-import {basePath} from '@/utils'
 
 export const siteConfig: ISiteConfig = {
   name: "einslen", // shown in the header
@@ -28,6 +27,29 @@ export const siteConfig: ISiteConfig = {
       {
         title: "Work",
         href: "#work",
+      },
+    ],
+  },
+  heroBanner: {
+    title: {
+      1: [{ text: "Hey !" }],
+      2: [
+        { text: "Je suis " },
+        { text: "Valentin damlencourt", highlighted: true },
+        { text: "." },
+      ],
+      3: [{ text: "Voici mon portfolio." }],
+    },
+    subtitle:
+        "Retrouvez mes projets et mes compétences à travers ce portfolio.",
+    callToActions: [
+      {
+        label: "Télécharger mon CV",
+        href: `/assets/cv.pdf`,
+      },
+      {
+        label: "Explore my projects",
+        href: "#projects",
       },
     ],
   },
