@@ -54,6 +54,43 @@ export const siteConfig: ISiteConfig = {
       },
     ],
   },
+  projets: [
+          {
+            name: 'TEST',
+            description:
+                "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets users share their photos, comment and like others' posts. Users can also browse and follow other users' profiles.",
+            techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
+            siteLink: '#',
+            githubLink: '#',
+            image: `${basePath}/images/projects/Flatcraft.webp`,
+          },
+    {
+      name: 'TEST',
+          description:
+      "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets users share their photos, comment and like others' posts. Users can also browse and follow other users' profiles.",
+          techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
+        siteLink: '#',
+        githubLink: '#',
+        image: `${basePath}/images/projects/Raytracer.webp`,
+    },
+    {
+      name: 'TEST',
+      description: "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets users share their photos, comment and like others' posts. Users can also browse and follow other users' profiles.",
+          techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
+        siteLink: '#',
+        githubLink: '#',
+        image: `${basePath}/images/projects/image.webp`,
+    },
+    {
+      name: 'TEST',
+          description:
+      "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets users share their photos, comment and like others' posts. Users can also browse and follow other users' profiles.",
+          techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
+        siteLink: '#',
+        githubLink: '#',
+        image: `${basePath}/images/projects/pokemon.webp`,
+    },
+    ],
   contact: {
     title: "Get in touch",
     description:

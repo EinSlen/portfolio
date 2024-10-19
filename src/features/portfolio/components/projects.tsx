@@ -1,44 +1,8 @@
 import {basePath} from '@/utils';
 import {Button} from "@/components/ui";
+import {siteConfig} from "@/config/site";
 
-const projects = [
-    {
-        name: 'TEST',
-        description:
-            "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets users share their photos, comment and like others' posts. Users can also browse and follow other users' profiles.",
-        techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
-        siteLink: '#',
-        githubLink: '#',
-        image: `${basePath}/images/projects/Flatcraft.webp`,
-    },
-    {
-        name: 'TEST',
-        description:
-            "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets users share their photos, comment and like others' posts. Users can also browse and follow other users' profiles.",
-        techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
-        siteLink: '#',
-        githubLink: '#',
-        image: `${basePath}/images/projects/Raytracer.webp`,
-    },
-    {
-        name: 'TEST',
-        description:
-            "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets users share their photos, comment and like others' posts. Users can also browse and follow other users' profiles.",
-        techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
-        siteLink: '#',
-        githubLink: '#',
-        image: `${basePath}/images/projects/image.webp`,
-    },
-    {
-        name: 'TEST',
-        description:
-            "Okv photogram is a web app that mimics Instagram's features using React.js and Firebase v9 (Baas). It lets users share their photos, comment and like others' posts. Users can also browse and follow other users' profiles.",
-        techUsed: ['ReactJs', 'Firebase V9', 'React-Icons', 'CSS3', 'HTML'],
-        siteLink: '#',
-        githubLink: '#',
-        image: `${basePath}/images/projects/pokemon.webp`,
-    },
-];
+const projects = siteConfig.projets
 
 // @ts-ignore
 const ProjectCard = ({ project }) => {
@@ -104,13 +68,13 @@ const SelectedWork = () => {
     return (
         <section className="container mx-auto px-4 py-8 pt-32">
             <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Selected Work</h2>
-            {projects.map((project) => (
+            {projects.map((project: any) => (
                 <ProjectCard key={project.name} project={project} />
             ))}
             <div className="text-center">
                 <a href="https://github.com/EinSlen?tab=repositories">
                     <Button key="show more" ariaLabel="Show more" size="lg" variant="outline">
-                        Show more...
+                        En voir plus...
                     </Button>
                 </a>
             </div>

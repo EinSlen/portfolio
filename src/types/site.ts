@@ -20,12 +20,6 @@ export interface IHeroBanner {
   }[]
 }
 
-export interface IAbout {
-  avatar: string
-  title: string
-  description: string[]
-}
-
 export interface IContact {
   title: string
   description: string
@@ -35,12 +29,21 @@ export interface IContact {
   }
 }
 
+export interface IProject {
+  name: string
+  image: string
+  description?: string
+  techUsed: string[]
+  siteLink?: string
+  githubLink ?: string
+}
+
 export interface ISiteConfig {
   name: string
   description: string
   links: ILinks
   header: { nav: INavItem[] }
   heroBanner: IHeroBanner
-  about: IAbout
+  projets: IProject[]
   contact: IContact
 }
