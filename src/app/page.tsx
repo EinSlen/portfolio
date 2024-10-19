@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
 
 const components = {
+    HeroBanner: dynamic(() => import('@/features/portfolio/components/hero-banner/hero-banner'), { ssr: false }),
     Work: dynamic(() => import('@/features/portfolio/components/work-card'), { ssr: false }),
     BeyondTheCode: dynamic(() => import('@/features/portfolio/components/beyond-the-code'), { ssr: false }),
     Timeline: dynamic(() => import('@/features/portfolio/components/timeline'), { ssr: false }),
@@ -11,6 +12,7 @@ const components = {
 
 export default function Home() {
     const {
+        HeroBanner,
         Work,
         BeyondTheCode,
         Timeline,
@@ -20,7 +22,7 @@ export default function Home() {
     } = components;
     return (
         <main className="overflow-hidden">
-
+                <HeroBanner/>
             <div
                 className="relative flex flex-col sm:flex-row gap-3 min-h-[calc(100vh-550px)] md:pt-8 pt-8 items-center justify-center">
                     <Work/>
