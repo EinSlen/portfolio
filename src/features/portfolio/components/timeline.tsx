@@ -30,7 +30,7 @@ const Timeline = () => {
                     </time>
                     <p className="mb-4 -pt-1 text-base font-normal text-gray-500 dark:text-gray-400"> BUT informatique desc "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         <br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br/> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
-                    <a href="#"
+                    <a href="https://www.iut-lens.univ-artois.fr/"
                        className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
                         Site web <svg className="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
                                       xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
