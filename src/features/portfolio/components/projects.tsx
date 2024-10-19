@@ -1,5 +1,6 @@
 import {basePath} from '@/utils';
 import {Button} from "@/components/ui";
+import React from "react";
 
 const projects = [
     {
@@ -106,11 +107,15 @@ const SelectedWork = () => {
                 <ProjectCard key={project.name} project={project} />
             ))}
             <div className="text-center">
-            <Button ariaLabel="Show more" size="lg" variant={"outline"}>
-                <a href="https://github.com/EinSlen?tab=repositories">Show more...</a>
-            </Button></div>
-        </section>
-    );
+                <a href="https://github.com/EinSlen?tab=repositories">
+                    <Button key="show more" ariaLabel="Show more" size="lg" variant={"outline"}>
+                        Show more...
+            </Button>
+                </a>
+        </div>
+</section>
+)
+    ;
 };
 
 export default SelectedWork;

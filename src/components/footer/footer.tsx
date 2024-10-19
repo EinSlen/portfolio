@@ -57,7 +57,7 @@ const Footer = async () => {
             <a
               href="https://github.com/einslen/portfolio"
               target="_blank"
-              className="hover:underline"
+              className="underline"
             >
               {siteConfig.name}
             </a>{" "}
