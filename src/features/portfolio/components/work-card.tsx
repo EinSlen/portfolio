@@ -20,14 +20,14 @@ const Work = () => {
                 </span>
             </a>
             <p className="mb-3 pt-2 font-normal text-gray-700 dark:text-gray-300">
-                Suivez ce guide étape par étape pour savoir comment certifier vos avantages hebdomadaires :
+                Viously est une plateforme innovante dédiée à l'intégration et la gestion de players vidéo pour maximiser l'argent générer.
             </p>
             <a
-                href="#"
+                href="https://viously.com"
                 className="inline-flex font-medium items-center text-blue-900 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-200 hover:underline"
-                aria-label="Voir notre guide des avantages hebdomadaires"
+                aria-label="Site viously"
             >
-                Voir notre guide
+                Accéder au site
                 <svg
                     className="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
                     aria-hidden="true"

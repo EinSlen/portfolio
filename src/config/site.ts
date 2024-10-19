@@ -18,15 +18,15 @@ export const siteConfig: ISiteConfig = {
         href: "/",
       },
       {
-        title: "School",
+        title: "Parcours Scolaire",
         href: "#school",
       },
       {
-        title: "Courses",
+        title: "Compétences",
         href: "#competence",
       },
       {
-        title: "Work",
+        title: "Projets",
         href: "#work",
       },
     ],
@@ -49,8 +49,8 @@ export const siteConfig: ISiteConfig = {
         href: `${basePath}/assets/cv.pdf`,
       },
       {
-        label: "Explore my projects",
-        href: "#projects",
+        label: "Mes Projets",
+        href: "#work",
       },
     ],
   },

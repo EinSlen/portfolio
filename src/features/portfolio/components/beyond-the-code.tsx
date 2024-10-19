@@ -1,9 +1,9 @@
 const BeyondTheCode = () => {
     const hobbies = [
         { name: 'Gaming', emoji: '🎮' },
-        { name: 'Hiking', emoji: '🥾' },
-        { name: 'Music', emoji: '🎵' },
-        { name: 'Fitness', emoji: '🏋️‍♀️' },
+        { name: 'Muscu', emoji: '🏋️‍♀️' },
+        { name: 'Rando', emoji: '🥾' },
+        { name: 'Musique', emoji: '🎵' },
     ];
 
     return (
@@ -13,7 +13,7 @@ const BeyondTheCode = () => {
                     <span className="text-teal-400 mr-2">✨</span> Beyond the Code
                 </h2>
                 <p className="text-gray-400">
-                    Explore my interests and hobbies beyond the digital realm.
+                    Explorez mes centres d'intérêt et mes passe-temps au-delà du code.
                 </p>
             </div>
 
