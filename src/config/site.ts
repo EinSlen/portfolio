@@ -54,22 +54,13 @@ export const siteConfig: ISiteConfig = {
       },
     ],
   },
-  about: {
-    avatar: "/images/avatar.png",
-    title: "I'm a passionate full-stack developer working from Sousse,Tunisia.",
-    description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi est sit amet facilisis magna etiam. Rutrum quisque non tellus orci ac auctor augue.",
-      "Posuere morbi leo urna molestie. Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac. Est velit egestas dui id ornare arcu odio ut sem. Faucibus in ornare quam viverra orci. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc.",
-      "Montes nascetur ridiculus mus mauris vitae. Sagittis aliquam malesuada bibendum arcu vitae elementum. Elit pellentesque habitant morbi tristique. Elementum facilisis leo vel fringilla. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Euismod nisi porta lorem mollis aliquam ut porttitor leo. Elementum nibh tellus molestie nunc non blandit massa enim nec",
-    ],
-  },
   contact: {
     title: "Get in touch",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Si vous avez besoin d'aide pour un projet ou si vous souhaitez discuter d'une collaboration, n'hésitez pas à me contacter !",
     callToAction: {
-      label: "Say hello",
-      href: "mailto:hello@mehdibha.co",
+      label: "Me contacter",
+      href: "mailto:valentin.damlencourt@gmail.com",
     },
   },
 }
