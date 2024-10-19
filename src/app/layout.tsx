@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   ]
 };
 
-// Dynamic imports
 const ThemeProvider = dynamic(() => import("@/components/theme-provider"), {
   ssr: false,
 });
