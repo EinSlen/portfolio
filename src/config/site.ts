@@ -31,29 +31,6 @@ export const siteConfig: ISiteConfig = {
       },
     ],
   },
-  heroBanner: {
-    title: {
-      1: [{ text: "Hey !" }],
-      2: [
-        { text: "Je suis " },
-        { text: "Valentin damlencourt", highlighted: true },
-        { text: "." },
-      ],
-      3: [{ text: "Voici mon portfolio." }],
-    },
-    subtitle:
-        "Retrouvez mes projets et mes compétences à travers ce portfolio.",
-    callToActions: [
-      {
-        label: "Télécharger mon CV",
-        href: `${basePath}/assets/cv.pdf`,
-      },
-      {
-        label: "Explore my projects",
-        href: "#projects",
-      },
-    ],
-  },
   about: {
     avatar: "/images/avatar.png",
     title: "I'm a passionate full-stack developer working from Sousse,Tunisia.",
