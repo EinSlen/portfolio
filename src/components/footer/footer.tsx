@@ -46,10 +46,7 @@ const icons = {
   )
 };
 
-export default icons;
-
-
-export const Footer = async () => {
+const Footer = async () => {
 
   return (
     <div className="container mt-12 pb-1">
@@ -87,3 +84,5 @@ export const Footer = async () => {
     </div>
   )
 }
+
+export default Footer;
