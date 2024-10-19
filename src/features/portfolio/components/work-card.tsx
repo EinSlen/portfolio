@@ -14,27 +14,21 @@ const Work = () => {
                 layout="fixed"
                 quality={5}
             />
-            <a href="#" className="block">
-                <span className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                    Développeur Frontend - Viously
-                </span>
-            </a>
+            <span className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                Développeur Frontend - Viously
+            </span>
             <p className="mb-3 pt-2 font-normal text-gray-700 dark:text-gray-300">
                 Viously est une plateforme innovante dédiée à l'intégration et la gestion de players vidéo pour maximiser l'argent générer.
             </p>
-            <a
-                href="https://viously.com"
+            <a href="https://viously.com"
                 className="inline-flex font-medium items-center text-blue-900 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-200 hover:underline"
-                aria-label="Site viously"
-            >
+                aria-label="Site viously">
                 Accéder au site
-                <svg
-                    className="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
+                <svg className="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
-                    viewBox="0 0 18 18"
-                >
+                    viewBox="0 0 18 18">
                     <path
                         stroke="currentColor"
                         strokeLinecap="round"
