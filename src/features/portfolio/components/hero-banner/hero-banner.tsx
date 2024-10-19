@@ -43,7 +43,6 @@ const HeroBanner = () => {
         </div>
       </div>
       <div className="absolute bottom-5 left-1/2 translate-x-[-50%]">
-        <MouseScrollAnimation />
       </div>
     </div>
   )
