@@ -2,6 +2,7 @@ import React from "react"
 import { siteConfig } from "@/config/site"
 import { Button } from "@/components/ui"
 import { MouseScrollAnimation } from "./mouse-scroll-animation"
+import Link from "next/link";
 
 const data = siteConfig.heroBanner
 
@@ -34,9 +35,11 @@ const HeroBanner = () => {
               size="lg"
               variant={index === 0 ? "default" : "neutral"}
             >
-              <a href={elem.href} target={index === 0 ? "_blank" : undefined}>
-                {elem.label}
-              </a>
+                <Link href={elem.href} scroll={true} passHref>
+                    <a target={index === 0 ? "_blank" : undefined}>
+                        {elem.label}
+                    </a>
+                </Link>
             </Button>
           ))}
         </div>
