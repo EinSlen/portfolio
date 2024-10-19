@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "next/link"
-import { siteConfig } from "@/config"
+import { siteConfig } from "@/config/site"
 import { Button } from "@/components/ui"
 import { MouseScrollAnimation } from "./mouse-scroll-animation"
 

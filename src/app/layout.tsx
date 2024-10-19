@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
-import { REVALIDATE_TIME, siteConfig } from "@/config";
+import { siteConfig } from "@/config/site";
 import "@/styles/globals.css";
 import Loader from "@/components/loader";
 

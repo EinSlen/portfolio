@@ -2,7 +2,7 @@
 
 import React from "react"
 import { Button, Toaster, useToast } from "@/components/ui"
-import { siteConfig } from "@/config"
+import { siteConfig } from "@/config/site"
 
 export const CopyButton = () => {
   const { toast } = useToast()

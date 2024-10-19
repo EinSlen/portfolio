@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react"
-import { siteConfig } from "@/config"
+import { siteConfig } from "@/config/site"
 import { Button, Sheet, SheetContent, SheetTrigger } from "../ui"
 import { Nav } from "./nav"
 

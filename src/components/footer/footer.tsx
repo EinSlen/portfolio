@@ -1,5 +1,4 @@
-
-import { siteConfig } from "@/config"
+import { siteConfig } from "@/config/site"
 import { ILinks } from "@/types"
 import { Button, Separator } from "../ui"
 

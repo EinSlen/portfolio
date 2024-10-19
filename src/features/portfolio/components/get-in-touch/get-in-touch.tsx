@@ -1,7 +1,5 @@
-
-
 import React from "react"
-import { siteConfig } from "@/config"
+import { siteConfig } from "@/config/site"
 import { Button } from "@/components/ui"
 import { CopyButton } from "./copy-button"
 

@@ -1,7 +1,6 @@
 import React, { Suspense } from "react"
-import Image from "next/image"
 import Link from "next/link"
-import { siteConfig } from "@/config"
+import { siteConfig } from "@/config/site"
 import { cn } from "@/utils"
 import { Background } from "./background"
 import { MobileNav } from "./mobile-nav"
