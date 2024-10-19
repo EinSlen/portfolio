@@ -26,41 +26,6 @@ export interface IAbout {
   description: string[]
 }
 
-export interface IWorkExperience {
-  title: string
-  company: string
-  link: string
-  location: string
-  startDate: string
-  endDate: string
-  description: string[]
-  tags: string[]
-}
-
-export interface IEducation {
-  school: string
-  degree: string
-  fieldOfStudy?: string
-  description?: string
-  startDate: string
-  link: string
-  endDate?: string
-}
-
-export interface IProject {
-  title: string
-  image: string
-  summary: string
-  description?: string[]
-  tags: string[]
-  links?: {
-    website?: string
-    github?: string
-    npm?: string
-  }
-  featured: boolean
-}
-
 export interface IContact {
   title: string
   description: string
@@ -70,25 +35,6 @@ export interface IContact {
   }
 }
 
-export interface ICourse {
-  title: string
-  description: string
-  image: string
-  rate: number
-  numberReviews: string
-  price: string
-  tags: string[]
-  link: string
-}
-
-export interface ITool {
-  title: string
-  description: string
-  image: string
-  tags: string[]
-  link: string
-}
-
 export interface ISiteConfig {
   name: string
   description: string
@@ -96,10 +42,5 @@ export interface ISiteConfig {
   header: { nav: INavItem[] }
   heroBanner: IHeroBanner
   about: IAbout
-  experience: IWorkExperience[]
-  education: IEducation[]
-  projects: IProject[]
-  courses: ICourse[]
   contact: IContact
-  tools: ITool[]
 }
