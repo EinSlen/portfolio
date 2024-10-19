@@ -38,7 +38,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body>
       <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
         <Header />
-        <div className="min-h-[calc(100vh-64px)]">{children}</div>
+        <Footer />
       </ThemeProvider>
       </body>
       </html>
