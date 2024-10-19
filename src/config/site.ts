@@ -1,4 +1,5 @@
 import { ISiteConfig } from "@/types"
+import {basePath} from "@/utils";
 
 export const siteConfig: ISiteConfig = {
   name: "einslen", // shown in the header
@@ -45,7 +46,7 @@ export const siteConfig: ISiteConfig = {
     callToActions: [
       {
         label: "Télécharger mon CV",
-        href: `/assets/cv.pdf`,
+        href: `${basePath}/assets/cv.pdf`,
       },
       {
         label: "Explore my projects",
