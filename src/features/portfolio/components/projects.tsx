@@ -107,7 +107,7 @@ const SelectedWork = () => {
             ))}
             <div className="text-center">
             <Button ariaLabel="Show more" size="lg" variant={"outline"}>
-                <a>Show more...</a>
+                <a href="https://github.com/EinSlen?tab=repositories">Show more...</a>
             </Button></div>
         </section>
     );
