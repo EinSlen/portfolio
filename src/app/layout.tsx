@@ -7,10 +7,15 @@ import Loader from "@/components/loader";
 //export const revalidate = REVALIDATE_TIME;
 
 export const metadata: Metadata = {
-
-  icons: {
-    icon: "./favicon.ico",
-  }
+  title: {
+    default: "Portfolio de Damlencourt Valentin",
+    template: `%s - ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ]
 };
 
 // Dynamic imports
