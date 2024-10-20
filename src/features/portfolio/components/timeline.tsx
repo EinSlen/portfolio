@@ -30,7 +30,7 @@ const Timeline = () => {
                         <time className="block mb-2 text-sm font-normal leading-none text-gray-700 dark:text-gray-300">
                             {item.time}
                         </time>
-                        <p className={`${index === 0? "mb-4 -pt-1" : ""}text-base font-normal text-gray-700 dark:text-gray-300`} dangerouslySetInnerHTML={{ __html: item.description }}>
+                        <p className={`${index === 0 ? "mb-4 -pt-1" : ""}text-base font-normal text-gray-700 dark:text-gray-300`} dangerouslySetInnerHTML={{ __html: item.description }}>
                         </p>
                         {item.link && (
                             <a href={item.link.href}
