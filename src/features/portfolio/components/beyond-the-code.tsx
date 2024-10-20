@@ -12,7 +12,7 @@ const BeyondTheCode = () => {
                 <h2 className="text-2xl font-bold flex items-center mb-2">
                     <span className="text-teal-400 mr-2">✨</span> Beyond the Code
                 </h2>
-                <p className="text-gray-400">
+                <p className="text-gray-700 dark:text-gray-300">
                     Explorez mes centres d'intérêt et mes passe-temps au-delà du code.
                 </p>
             </div>
