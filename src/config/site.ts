@@ -130,4 +130,10 @@ export const siteConfig: ISiteConfig = {
       href: "mailto:valentin.damlencourt@gmail.com",
     },
   },
+  hobbies: [
+    { name: 'Gaming', emoji: '🎮' },
+    { name: 'Muscu', emoji: '🏋️‍♀️' },
+    { name: 'Rando', emoji: '🥾' },
+    { name: 'Musique', emoji: '🎵' },
+  ]
 };

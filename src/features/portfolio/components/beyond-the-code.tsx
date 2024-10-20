@@ -1,10 +1,7 @@
+import {siteConfig} from "@/config/site";
+
 const BeyondTheCode = () => {
-    const hobbies = [
-        { name: 'Gaming', emoji: '🎮' },
-        { name: 'Muscu', emoji: '🏋️‍♀️' },
-        { name: 'Rando', emoji: '🥾' },
-        { name: 'Musique', emoji: '🎵' },
-    ];
+    const hobbies = siteConfig.hobbies
 
     return (
         <div className="max-w-sm p-6 text-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full">
@@ -16,14 +13,11 @@ const BeyondTheCode = () => {
                     Explorez mes centres d'intérêt et mes passe-temps au-delà du code.
                 </p>
             </div>
-
-            {/* Responsive grid layout */}
             <div className="grid grid-cols-3 gap-3 mt-4 sm:grid-cols-2 md:grid-cols-3">
                 {hobbies.map((hobby) => (
                     <div
                         key={hobby.name}
-                        className="bg-gradient-to-r from-teal-400 to-blue-500 text-white px-4 py-2 rounded-full text-sm flex items-center justify-center"
-                    >
+                        className="bg-gradient-to-r from-teal-400 to-blue-500 text-white px-4 py-2 rounded-full text-sm flex items-center justify-center">
                         <span className="mr-2">{hobby.name}</span> <span>{hobby.emoji}</span>
                     </div>
                 ))}

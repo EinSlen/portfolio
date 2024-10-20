@@ -5,6 +5,11 @@ export interface ILinks {
   mail: string
 }
 
+export interface IHobbies {
+  name: string
+  emoji?: string
+}
+
 export interface IHeroBanner {
   title: {
     [sectionNumber: string]: {
@@ -62,4 +67,5 @@ export interface ISiteConfig {
   projets: IProject[]
   timeline: ITimeline
   contact: IContact
+  hobbies: IHobbies[]
 }
