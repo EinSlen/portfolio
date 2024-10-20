@@ -2,8 +2,6 @@ import { INavItem } from "./nav"
 
 export interface ILinks {
   github?: string
-  linkedin?: string
-  mail: string
 }
 
 export interface IHeroBanner {

@@ -29,7 +29,7 @@ export const CopyButton = () => {
                         />
                         <circle cx="12" cy="12" r="9"/>
                     </svg>
-                    <span>Email copied</span>
+                    <span>Email copié</span>
                 </div>
             ),
         })
