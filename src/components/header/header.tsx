@@ -18,7 +18,7 @@ export const Header = () => {
             href={basePath}
             className="mr-8 flex items-center space-x-2 transition-all hover:opacity-80"
           >
-            <span className="inline-block font-bold">{"<"+name+"/>"}</span>
+            <span className="inline-block font-bold -translate-y-1">{"<"+name+"/>"}</span>
           </a>
           <div className="hidden flex-1 sm:flex">
             <div className="flex-1">

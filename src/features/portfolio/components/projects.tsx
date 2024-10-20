@@ -6,7 +6,7 @@ const projects = siteConfig.projets
 // @ts-ignore
 const ProjectCard = ({ project }) => {
     return (
-        <div className="dark:bg-gray-800 dark:border-gray-700 bg-white rounded-lg p-6 flex flex-col md:flex-row items-center justify-between shadow-lg mb-8 relative">
+        <div className="dark:bg-gray-800 dark:border-gray-700 bg-gray-100 rounded-lg p-6 flex flex-col md:flex-row items-center justify-between shadow-lg mb-8 relative">
             <div className="w-full mb-6 md:mb-0 z-10">
                 <div className="flex items-center mb-4">
                     <span className="text-3xl mr-2">{project.emoji}</span>

@@ -3,7 +3,7 @@ import {basePath} from '@/utils'
 
 const Work = () => {
     return (
-        <div className="max-w-sm p-6 text-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full">
+        <div className="max-w-sm p-6 text-center bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full">
             <Image
                 className="mx-auto pb-5"
                 src={`${basePath}/images/viously-large.webp`}

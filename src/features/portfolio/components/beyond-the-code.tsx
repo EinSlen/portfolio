@@ -4,7 +4,7 @@ const BeyondTheCode = () => {
     const hobbies = siteConfig.hobbies
 
     return (
-        <div className="max-w-sm p-6 text-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full">
+        <div className="max-w-sm p-6 text-center bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full">
             <div className="mb-4 pt-2">
                 <h2 className="text-2xl font-bold flex items-center mb-2">
                     <span className="text-teal-400 mr-2">✨</span> Beyond the Code
