@@ -9,10 +9,12 @@ const components = {
     Competence: dynamic(() => import('@/features/portfolio/components/competence'), { ssr: false }),
     SelectedWork: dynamic(() => import('@/features/portfolio/components/projects'), { ssr: false }),
     GetInTouch: dynamic(() => import('@/features/portfolio/components/get-in-touch/get-in-touch'), { ssr: false }),
+    SkillsAndLanguages: dynamic(() => import('@/features/portfolio/components/skillsAndLanguage'), { ssr: false }),
 };
 
 export default function Home() {
     const {
+        SkillsAndLanguages,
         AnimatedGradient,
         HeroBanner,
         Work,
@@ -24,25 +26,31 @@ export default function Home() {
     } = components;
     return (
         <main className="overflow-hidden">
-                <AnimatedGradient/>
-                <HeroBanner/>
+            <AnimatedGradient/>
+            <HeroBanner/>
             <div
-                className="relative flex flex-col sm:flex-row gap-3 min-h-[calc(100vh-550px)] md:pt-8 pt-8 items-center justify-center">
-                    <Work/>
-                    <BeyondTheCode/>
+                className="relative flex flex-col sm:flex-row gap-3 pt-32 items-center justify-center">
+                <Work/>
+                <BeyondTheCode/>
             </div>
-            <div id="school">
+
+            <div className="flex justify-center w-full pt-3">
+                <SkillsAndLanguages/>
+            </div>
+
+
+            <div className="pt-32" id="school">
                 <Timeline/>
             </div>
             <div id="competence" className="pb-16 pt-32">
-                    <Competence/>
+                <Competence/>
             </div>
             <div id="work">
-                    <SelectedWork/>
+                <SelectedWork/>
             </div>
-                <div id="contact" className="flex min-h-[calc(100vh-160px)] items-center justify-center py-20">
-                        <GetInTouch/>
-                </div>
+            <div id="contact" className="flex min-h-[calc(100vh-160px)] items-center justify-center py-20">
+                <GetInTouch/>
+            </div>
         </main>
-);
+    );
 }
