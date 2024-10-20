@@ -38,6 +38,21 @@ export interface IProject {
   githubLink ?: string
 }
 
+export interface ITimeline {
+  title: string
+  description: string
+  items: ({
+    title: string
+    status?: string
+    time: string
+    description: string
+    link?: {
+      label: string
+      href: string
+    }
+  })[]
+}
+
 export interface ISiteConfig {
   name: string
   description: string
@@ -45,5 +60,6 @@ export interface ISiteConfig {
   header: { nav: INavItem[] }
   heroBanner: IHeroBanner
   projets: IProject[]
+  timeline: ITimeline
   contact: IContact
 }
