@@ -24,8 +24,8 @@ export const Nav = (props: NavProps) => {
               key={index}
               href={item.href}
               className={cn(
-                "hover:text-foreground flex items-center justify-center rounded-lg px-5 py-2 text-sm font-medium transition-all",
-                item.disabled && "cursor-not-allowed opacity-80", "text-foreground/60"
+                "hover:text-foreground dark:hover:text-foreground font-bold flex items-center justify-center rounded-lg px-5 py-2 text-sm  transition-all",
+                item.disabled && "cursor-not-allowed opacity-80", "text-foreground/70 dark:text-foreground/60"
               )}
               onClick={onNavItemClick}
             >
