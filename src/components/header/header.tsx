@@ -1,6 +1,6 @@
 import React, { Suspense } from "react"
 import { siteConfig } from "@/config/site"
-import { cn } from "@/utils"
+import {basePath, cn} from "@/utils"
 import { Background } from "./background"
 import { MobileNav } from "./mobile-nav"
 import { Nav } from "./nav"
@@ -15,7 +15,7 @@ export const Header = () => {
       <div className="relative">
         <div className="container flex h-16 items-center px-4 sm:px-8">
           <a
-            href="/"
+            href={basePath}
             className="mr-8 flex items-center space-x-2 transition-all hover:opacity-80"
           >
             <span className="inline-block font-bold">{"<"+name+"/>"}</span>
