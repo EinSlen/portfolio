@@ -13,7 +13,7 @@ export const siteConfig: ISiteConfig = {
     nav: [
       {
         title: "Home",
-        href: "/",
+        href: "#",
       },
       {
         title: "Parcours Scolaire",

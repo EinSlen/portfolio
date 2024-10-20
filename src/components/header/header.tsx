@@ -15,7 +15,7 @@ export const Header = () => {
       <div className="relative">
         <div className="container flex h-16 items-center px-4 sm:px-8">
           <a
-            href="/"
+            href="#"
             className="mr-8 flex items-center space-x-2 transition-all hover:opacity-80"
           >
             <span className="inline-block font-bold">{"<"+name+"/>"}</span>
