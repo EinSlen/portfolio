@@ -71,7 +71,7 @@ export const siteConfig: ISiteConfig = {
         title: "Prepa Scientifique",
         time: "Le 13 septembre, 2021",
         description:
-            " J'ai suivi une classe préparatoire scientifique à <strong>Valencienne</strong> qui m'a permis d'acquérir des bases solides<br/> en mathématiques et en physique. Cette expérience m'a préparé aux exigences des études supérieures.",
+            " J'ai suivi une classe préparatoire scientifique à <strong>Valenciennes</strong> qui m'a permis d'acquérir des bases solides<br/> en mathématiques et en physique. Cette expérience m'a préparé aux exigences des études supérieures.",
       },
       {
         title: "Baccalauréat Scientifique",
