@@ -7,9 +7,9 @@ export const MouseScrollAnimation = () => {
   return (
       <div className="flex flex-col items-center justify-center space-y-1">
           <div
-              className="border-foreground-secondary flex h-[40px] w-[26px] items-center justify-center rounded-full border">
+              className="border-gray-800 dark:border-foreground-secondary flex h-[40px] w-[26px] items-center justify-center rounded-full border">
               <motion.div
-                  className="bg-foreground-secondary h-[12px] w-[2px] rounded-full"
+                  className="bg-gray-800 dark:bg-foreground-secondary h-[12px] w-[2px] rounded-full"
                   initial={{opacity: 1, y: -6}}
                   animate={{y: 0, opacity: 0}}
                   transition={{
@@ -21,7 +21,7 @@ export const MouseScrollAnimation = () => {
           </div>
           <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="text-foreground-secondary"
+              className="dark:text-foreground-secondary border-gray-800"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
