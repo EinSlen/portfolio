@@ -1,18 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   compress: true,
-  async headers() {
+  headers() {
     return [
       {
-        source: '/_next/static/(.*)', // Cible les fichiers statiques de Next.js
+        source: '/_next/static/(.*)',
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable', // Cache pour un an
+            value: 'public, max-age=31536000, immutable',
           },
           {
             key: 'Expires',
-            value: new Date(Date.now() + 31536000000).toUTCString(), // Expire dans un an
+            value: new Date(Date.now() + 31536000000).toUTCString(),
           },
         ],
       },
