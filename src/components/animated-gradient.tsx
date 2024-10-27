@@ -98,4 +98,4 @@ const Gradient = () => {
     )
 }
 
-export default AnimatedGradient
+export default AnimatedGradient;

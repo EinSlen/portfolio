@@ -22,13 +22,13 @@ const ProjectCard = ({ project }) => {
                 </div>
                 <div className="flex gap-4 hidden md:flex">
                     {project?.siteLink && (
-                        <a href={project.siteLink} className="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition duration-200 border border-gray-900">
+                        <a href={project.siteLink} className="bg-gray-900 text-white font-semibold px-4 py-2 rounded-lg hover:bg-gray-700 transition duration-200 border border-gray-900">
                             Voir le Site →
                         </a>
                     )}
                     <a
                         href={project.githubLink}
-                        className="text-gray-900 dark:text-gray-200 bg-transparent dark:bg-gray-700 border border-gray-900 dark:border-gray-600 px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition duration-200"
+                        className="text-gray-900 dark:text-gray-200 font-semibold bg-transparent dark:bg-gray-700 border border-gray-900 dark:border-gray-600 px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition duration-200"
                         aria-label={`View ${project.name} on GitHub`}
                     >
                         GitHub →
