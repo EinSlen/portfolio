@@ -20,7 +20,7 @@ const Work = () => {
             <p className="mb-3 pt-2 font-normal text-gray-700 dark:text-gray-300">
                 Viously est une plateforme innovante dédiée à l'intégration et la gestion de players vidéo pour maximiser l'argent générer.
             </p>
-            <a href="https://viously.com"
+            <a target="_blank" href="https://viously.com"
                 className="inline-flex font-medium items-center text-blue-900 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-200 hover:underline"
                 aria-label="Site viously">
                 Accéder au site
