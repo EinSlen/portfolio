@@ -68,13 +68,13 @@ export const siteConfig: ISiteConfig = {
         },
       },
       {
-        title: "Prepa Scientifique",
+        title: "Prepa Scientifique TSI",
         time: "Le 13 septembre, 2021",
         description:
             " J'ai suivi une classe préparatoire scientifique à <strong>Valenciennes</strong> qui m'a permis d'acquérir des bases solides<br/> en mathématiques et en physique. Cette expérience m'a préparé aux exigences des études supérieures.",
       },
       {
-        title: "Baccalauréat Scientifique",
+        title: "Baccalauréat STI2D",
         time: "Diplômé le 7 décembre, 2021",
         description:
             " J'ai obtenu mon baccalauréat avec mention au lycée <strong>Henry D'Arras</strong>, ce qui m'a ouvert les portes<br/> de l'enseignement supérieur dans le domaine des sciences et de la technologie/Informatique.",
